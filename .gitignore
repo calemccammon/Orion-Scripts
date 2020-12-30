@@ -1,6 +1,6 @@
 *.dll
 *.pdb
-/Config
-/SavedHotkeys
-/GlobalConfig/Maps
-/GlobalConfig/SkinStyles
+Config/
+SavedHotkeys/
+GlobalConfig/Maps/
+GlobalConfig/SkinStyles/
