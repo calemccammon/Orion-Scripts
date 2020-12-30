@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data version="1" size="13">
+    <hotkey type="3" action="4294967295" running_mode="false" key="65" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/attack_nearest.oajs&quot;);&#10;Orion.Exec(&quot;attackNearest&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="49" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_energy_bolt.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="50" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_fireball.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="51" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_enemy_of_one.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="88" modifiers="2" name="" external_code="Orion.LoadScript(&quot;orion-scripts/auto_bandage.oajs&quot;);&#10;Orion.Exec(&quot;keepBandaging&quot;, null);" toggle_script="true"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="81" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_wither.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="87" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_thunderstorm.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="82" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_momentum_strike.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="69" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_lightning_strike.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="51" modifiers="4" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_invisibility.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="49" modifiers="4" name="cast" external_code="Orion.LoadScript(&quot;orion-scripts/cast_greater_heal.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+    <hotkey type="3" action="4294967295" running_mode="false" key="50" modifiers="4" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_arch_cure.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
+</data>

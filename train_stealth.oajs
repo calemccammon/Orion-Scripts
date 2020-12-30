@@ -1,0 +1,35 @@
+//disable auto run before running this script
+function trainStealth() {
+	var skill = Orion.SkillValue('Stealth', 'base');
+	var hideText = 'hidden';
+	var stealthFail = 'You fail in your attempt to move unnoticed';
+	if (Orion.OptionAlwaysRun()) {
+		Orion.OptionAlwaysRun(false);
+	}
+	
+	while (skill < Orion.SkillValue('Stealth', 'cap')) {
+		Orion.Wait(1000);
+		Orion.ClearJournal();
+		Orion.UseSkill('Hiding')
+		Orion.Wait(250);
+		if (Orion.InJournal(hideText)) {
+			var stepMax = skill / 100;
+			while (!Orion.InJournal(stealthFail)) {
+				for (var i = 0; i < stepMax; i++) {
+						Orion.Turn('East');
+						Orion.Wait(250);
+						Orion.Step('East');
+						Orion.Wait(250);
+						Orion.Turn('West');
+						Orion.Wait(250);
+						Orion.Step('West');
+						Orion.Wait(250);
+						skill = Orion.SkillValue('Stealth', 'base');
+						if (Orion.InJournal(stealthFail)) {
+							break;
+						}
+				}
+			}
+		}
+	}
+}

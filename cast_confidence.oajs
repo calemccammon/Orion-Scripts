@@ -1,0 +1,5 @@
+function cast() {
+	if(!Orion.BuffExists("Confidence")) {
+		Orion.Cast("Confidence");
+	}
+}

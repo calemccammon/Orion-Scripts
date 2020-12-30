@@ -1,0 +1,8 @@
+function cast() {
+	Orion.CancelWaitGump();
+	Orion.Wait(250);
+	Orion.Cast('Animal Form');
+	if(!Orion.BuffExists("Animal Form")) {
+		Orion.WaitGump(Orion.CreateGumpHook(103));
+	}
+}

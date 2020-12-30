@@ -1,0 +1,31 @@
+function trainMysticism() {
+	var skill = Orion.SkillValue('Mysticism','base');
+	var manaCost = 0;
+	var delay = 0;
+	
+	while(skill < Orion.SkillValue('Mysticism','cap')) {
+		if (skill <= 630) {
+			Orion.Cast('Stone Form');
+			manaCost = 11;
+			delay = 1250;
+		} else if (skill <= 800) {
+			Orion.Cast('Cleansing Winds', self);
+			manaCost = 20;
+			delay = 1750;
+		} else if (skill <= 950) {
+			Orion.Cast('Hail Storm', self);
+			manaCost = 50;
+			delay = 2000;
+		} else if(skill < 1200) {
+			Orion.Cast('Nether Cyclone', self);
+			manaCost = 50;
+			delay = 2250;
+		}
+		Orion.Wait(delay * 3);
+		if(Player.Mana() < manaCost) {
+			Orion.UseSkill('Meditation');
+			Orion.Wait(10000);
+		}
+		skill = Orion.SkillValue('Mysticism','base');
+	}
+}

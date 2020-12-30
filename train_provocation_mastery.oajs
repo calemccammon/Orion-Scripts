@@ -1,0 +1,22 @@
+function trainProvocation() {
+	var skill = Orion.SkillValue('Provocation','base');
+	var manaCost = 30;
+	var instrument = '0x0E9D';
+	
+	while(skill < Orion.SkillValue('Provocation','cap')) {
+		Orion.ClearJournal();
+		if (skill >= 900) {
+			if (Player.Mana() < 30) {
+				Orion.UseSkill('Meditation');
+				Orion.Wait(10000);
+			}
+			Orion.Cast('Inspire');
+			if (Orion.WaitForTarget(1000)) {
+				Orion.TargetType(instrument, '0xFFFF');
+				Orion.Wait(250);
+			}
+			Orion.Wait(3000);
+		}
+		skill = Orion.SkillValue('Provocation','base');
+	}
+}

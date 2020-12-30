@@ -1,0 +1,45 @@
+function trainSpellweaving() {
+	var skill = Orion.SkillValue('Spellweaving','base');
+	var manaCost = 0;
+	var delay = 0;
+	
+	while(skill < Orion.SkillValue('Spellweaving','cap')) {
+		Orion.Turn('north'); //turn to keep server from kicking us off
+		if (skill < 200) {
+			Orion.Cast('Arcane Circle');
+			manaCost = 24;
+			delay = 500;
+		} else if (skill < 330) {
+			Orion.Cast('Immolating Weapon');
+			manaCost = 32;
+			delay = 1000;
+		} else if (skill < 520) {
+			Orion.Cast('Reaper Form');
+			manaCost = 32;
+			delay = 2500;
+		} else if (skill < 740) {
+			Orion.Cast('Essence of Wind');
+			manaCost = 40;
+			delay = 3000;
+		} else if (skill < 900) {
+			Orion.Cast('Wildfire', self);
+			manaCost = 50;
+			delay = 2500;
+		} else if(skill < 1200) {
+			Orion.Cast('Word Of Death', self);
+			manaCost = 50;
+			delay = 3500;
+		}
+		Orion.Turn('south');
+		Orion.Wait(delay * 3);
+		if(Player.Mana() < manaCost) {
+			Orion.UseSkill('Meditation');
+			Orion.Wait(10000);
+		}
+		if (Player.Hits() < Player.MaxHits() * 0.5) {
+			Orion.Cast('Greater Heal', self);
+			Orion.Wait(4000);
+		}
+		skill = Orion.SkillValue('Spellweaving','base');
+	}
+}

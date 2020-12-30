@@ -1,0 +1,9 @@
+function trainHiding() {
+	var skill = Orion.SkillValue('Hiding', 'base');
+
+	while (skill < Orion.SkillValue('Hiding', 'cap')) {
+			Orion.UseSkill('Hiding');
+			Orion.Wait(12000);
+			skill = Orion.SkillValue('Hiding', 'base');
+	}
+}

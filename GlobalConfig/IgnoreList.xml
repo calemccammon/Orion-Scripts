@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data version="0" size="2">
+    <ignorelist name="New list">
+        <item serial="0" graphic="0x00A4" color="0x0000" comment="an energy vortex"/>
+        <item serial="0" graphic="0x033D" color="0x0000" comment="a rising colossus"/>
+        <item serial="0" graphic="0x025D" color="0x0000" comment="self"/>
+    </ignorelist>
+</data>

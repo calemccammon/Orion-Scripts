@@ -1,0 +1,5 @@
+function cast() {
+	if(!Player.Paralyzed()) {
+		Orion.Cast("Wither");
+	}
+}

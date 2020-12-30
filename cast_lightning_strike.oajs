@@ -1,0 +1,5 @@
+function cast() {
+	if(!Orion.BuffExists("Lightning Strike")) {
+		Orion.Cast("Lightning Strike");
+	}
+}

@@ -1,0 +1,5 @@
+function cast() {
+	if(Player.Poisoned()) {
+		Orion.Cast("Cleanse by Fire", self);
+	}
+}

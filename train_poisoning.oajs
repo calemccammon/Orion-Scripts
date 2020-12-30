@@ -1,0 +1,14 @@
+function trainPoisoning() {
+	var skill = Orion.SkillValue('Poisoning','base');
+	var poison =  '0x0F0A';
+	var dagger = '0x0F51';
+	while (skill < Orion.SkillValue('Poisoning', 'cap')) {
+		Orion.UseSkill('Poisoning');
+		Orion.WaitForTarget(1000);
+		Orion.TargetType(poison, '0xFFFF');
+		Orion.WaitForTarget(1000);
+		Orion.TargetType(dagger, '0xFFFF');
+		Orion.Wait(11000);
+		skill =  Orion.SkillValue('Poisoning','base');
+	}
+}

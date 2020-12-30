@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data version="0" size="3">
+    <findlist name="lootlist">
+        <item graphic="0x0E7C" color="0x0A5C" comment="" count="0"/>
+        <item graphic="0x14FB" color="0x0000" comment="35 Lockpick" count="0"/>
+        <item graphic="0x0FC0" color="0x0000" comment="Mapmaker's Pen" count="0"/>
+    </findlist>
+    <findlist name="sell_maps">
+        <item graphic="0x14EB" color="0x0000" comment="" count="0"/>
+    </findlist>
+</data>

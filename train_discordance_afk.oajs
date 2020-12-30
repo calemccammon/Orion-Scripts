@@ -1,0 +1,33 @@
+//For mid-range training of Discordance.
+//1. Attack an enemy and lure to a secluded spot.
+//2. Run this script.
+//3. Check every so often to see whether your instrument has broken.
+//Safe places: Terathon keep room with center swamp
+function trainDiscordance() {
+	Orion.ClearJournal();
+ 	if(Player.Hits() < Player.MaxHits() - 20) {
+		 Orion.Cast('Greater Heal', self);
+		 Orion.Wait(2000);
+	}
+	Orion.Ignore(self);
+    var target = Orion.FindType("-1", "-1", "ground", "near|live", 18, "gray|criminal|orange|red");
+    if (target.length != 0) {
+		 Orion.UseSkill('Discordance');
+		 Orion.WaitTargetObject(target[0]);
+		 //We attack the closest enemy to lure it to us.
+		 Orion.WarMode(true);
+		 Orion.Attack(target[0]);
+		 Orion.Wait(2000);
+		 if (Orion.InJournal('You attempt to disrupt your target, but fail') || Orion.InJournal('too far away.')) {
+		 	Orion.Wait(6000);
+		 } else {
+		 	//Remain invisible for a bit so discordance wears off.
+		 	Orion.Cast('Invisibility', self);
+		 	Orion.Wait(18000);
+		 }
+    } else {
+    	Orion.Wait(30000);
+    }
+    Orion.IgnoreReset();
+    trainDiscordance();
+}

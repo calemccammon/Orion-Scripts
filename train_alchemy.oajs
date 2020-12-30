@@ -1,0 +1,19 @@
+function trainAlchemy() {
+	var skill = Orion.SkillValue('Alchemy','base');
+	
+	while (skill < Orion.SkillValue('Alchemy','cap')) {
+		Orion.CancelWaitGump();
+		var mortar = '0x0E9B';
+		Orion.UseType(mortar, '0xFFFF');
+		Orion.WaitForGump(1000);
+	
+		var toxic = 9003;
+		var poison = 61;
+	
+		Orion.WaitGump(Orion.CreateGumpHook(9003));
+		Orion.WaitForGump(1000);
+		Orion.GetGump('last').Select(Orion.CreateGumpHook(61));
+		Orion.Wait(1000);
+		skill = Orion.SkillValue('Alchemy','base');
+	}
+}

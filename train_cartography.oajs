@@ -1,0 +1,25 @@
+function trainCartography() {
+	var skill = Orion.SkillValue('Cartography','base');
+	var scrolls = Orion.FindType('0x0EF3','-1',backpack,true).length;
+	var pens = Orion.FindType('0x0FC0','-1',backpack,true).length;
+	var itemCount = Orion.FindType('-1','-1',backpack,true).length;
+	while(skill < Orion.SkillValue('Cartography','cap') && itemCount < 110 &&
+		scrolls > 0 && pens > 0) {
+		Orion.UseType('0x0FC0','0x0000',self,true);
+		Orion.WaitForGump(1000);
+		var button = 1;
+		if(skill >= 500 && skill < 600) {
+			button = 2;
+		} else if(skill < 700) {
+			button = 3;
+		} else if(skill < 995) {
+			button = 4;
+		}
+		Orion.GetGump('last').Select(Orion.CreateGumpHook(button));
+		Orion.Wait(100);
+		skill = Orion.SkillValue('Cartography','base');
+		scrolls = Orion.FindType('0x0EF3','-1',backpack,true).length;
+		pens = Orion.FindType('0x0FC0','-1',backpack,true).length;
+		itemCount = Orion.FindType('-1','-1',backpack,true).length;
+	}
+}

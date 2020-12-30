@@ -1,0 +1,17 @@
+function trainResist() {
+	var skill = Orion.SkillValue('Resisting Spells','base');
+	
+	while(skill < Orion.SkillValue('Resisting Spells','cap')) {
+		Orion.CancelTarget();
+		Orion.Wait(250);
+		Orion.Turn('north');  //turn so server doesn't kick us off
+		Orion.Cast('Weaken', self);
+		Orion.Wait(2000);
+		Orion.Turn('south');
+		skill = Orion.SkillValue('Resisting Spells','base');
+		if (Player.Mana() <= 4) {
+			Orion.UseSkill('Meditation');
+			Orion.Wait(10000);
+		}
+	}
+}

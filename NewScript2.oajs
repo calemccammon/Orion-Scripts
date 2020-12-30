@@ -1,0 +1,21 @@
+function trainSpiritSpeak() {
+	var skill = Orion.SkillValue('Spirit Speak','base');
+	
+	while(skill < Orion.SkillValue('Spirit Speak','cap')) {
+		Orion.Turn('north');  //turn so server doesn't kick us off
+		if (Orion.SkillValue('Necromancy','base') >= 200) {
+			Orion.Cast('Curse Weapon')
+			Orion.Wait(1500);
+			if(Player.Mana() < 7) {
+				Orion.UseSkill('Meditation');
+				Orion.Wait(10000);
+			}
+		} else {
+			Orion.UseSkill('Spirit Speak')
+			Orion.Wait(10000);
+		}
+		Orion.Turn('south');
+		Orion.Wait(250);
+		skill = Orion.SkillValue('Spirit Speak','base');
+	}
+}

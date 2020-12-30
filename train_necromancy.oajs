@@ -1,0 +1,38 @@
+function trainNecromancy() {
+	var skill = Orion.SkillValue('Necromancy','base');
+	var manaCost = 0;
+	var delay = 0;
+	
+	while(skill < Orion.SkillValue('Necromancy','cap')) {
+		Orion.Turn('north');  //turn so server doesn't kick us off
+		if (skill <= 500) {
+			Orion.Cast('Wraith Form');
+			manaCost = 17;
+			delay = 1500;
+		} else if (skill <= 700) {
+			Orion.Cast('Horrific Beast');
+			manaCost = 11;
+			delay = 1750;
+		} else if (skill <= 900) {
+			Orion.Cast('Wither');
+			manaCost = 23;
+			delay = 1000;
+		} else if (skill <= 1000) {
+			Orion.Cast('Lich Form');
+			manaCost = 25;
+			delay = 1750;
+		} else if(skill < 1200) {
+			Orion.Cast('Vampiric Embrace');
+			manaCost = 25;
+			delay = 1750;
+		}
+		Orion.Wait(delay * 3);
+		if(Player.Mana() < manaCost) {
+			Orion.UseSkill('Meditation');
+			Orion.Wait(10000);
+		}
+		Orion.Turn('south');
+		Orion.Wait(250);
+		skill = Orion.SkillValue('Necromancy','base');
+	}
+}

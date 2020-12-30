@@ -1,0 +1,73 @@
+function trainNinjitsu() {
+	var skill = Orion.SkillValue('Ninjitsu','base');
+	while(skill < Orion.SkillValue('Ninjitsu','cap')) {
+		if (skill < 560) {
+			useMirrorImage();
+		} else if (skill < 875) {
+			if (!Player.Hidden()) {
+				Orion.UseSkill('Hiding');
+				Orion.Wait(2000);
+			}
+			useShadowJump();
+		} else if (skill >= 900 && skill < 1200) {
+			Orion.Cast('Shadow');
+			Orion.Wait(2000);
+		}
+		skill = Orion.SkillValue('Ninjitsu','base');
+	}
+}
+
+function useMirrorImage() {
+	if (Player.Mana() < 10) {
+		Orion.Wait(10000);
+	}
+	Orion.Cast('Mirror Image');
+	Orion.Wait(4000);
+	attackNearest(); //kill our mirror image
+}
+
+function attackNearest() {
+    Orion.Ignore(self);
+    var target = Orion.FindType("-1", "-1", "ground", "near|live", 18, "blue|gray");
+    if (target.length != 0) {
+    	var name = Orion.FindObject(target[0]).Name();
+    	if (name == Player.Name()) {
+    		Orion.Attack(target[0]);
+    		Orion.IgnoreReset();
+		}
+    }
+}
+
+//This presumes you have enough 100 hiding and enough stealth to always be successful
+//Start with character facing north
+//1. Hide
+//2. Step 1 tile north to initiate Stealth
+//3. Shadow jump 1 tile south
+//4. If fizzle, return to starting tile
+//This is good until 87.5, after which you can't gain from Shadowjump.
+function useShadowJump() {
+	Orion.ClearJournal();
+	while (!hasFizzled()) {
+		if(Player.Mana() < 12) {
+			Orion.Wait(10000);
+		}
+		Orion.Step('North'); //Initiate stealth
+		Orion.Cast('Shadowjump');
+		Orion.WaitForTarget(2000);
+		Orion.TargetTileRelative(null, 0,1,0);
+		Orion.Wait(2000);
+		if (hasFizzled()) {
+			Orion.Turn('South');
+			Orion.Wait(400);
+			Orion.Step('South');
+			Orion.Wait(400);
+			Orion.Turn('North');
+			Orion.Wait(400);
+			break;
+		}
+	}
+}
+
+function hasFizzled() {
+	return Orion.InJournal('The spell fizzles.');
+}

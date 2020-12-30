@@ -1,0 +1,6 @@
+function cast() {
+	if(!Orion.BuffExists("Enchant")) {
+		Orion.Cast('Enchant');
+		Orion.WaitGump(Orion.CreateGumpHook(4));
+	}
+}

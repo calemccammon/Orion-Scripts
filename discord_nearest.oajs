@@ -1,0 +1,9 @@
+function discordNearest() {
+	Orion.Ignore(self);
+    var target = Orion.FindType("-1", "-1", "ground", "near|live", 18, "gray|criminal|orange|red");
+    if (target.length != 0) {
+		 Orion.UseSkill('Discordance');
+		 Orion.WaitTargetObject(target[0]);
+		 Orion.IgnoreReset();
+    }
+}

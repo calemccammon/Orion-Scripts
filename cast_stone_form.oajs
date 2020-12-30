@@ -1,0 +1,3 @@
+function cast() {
+	Orion.Cast('Stone Form');
+}

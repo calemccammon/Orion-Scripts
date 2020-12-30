@@ -1,0 +1,39 @@
+function trainMagery() {
+	var skill = Orion.SkillValue('Magery','base');
+	var manaCost = 0;
+	var delay = 0;
+	
+	while(skill < Orion.SkillValue('Magery','cap')) {
+		Orion.CancelTarget();
+		Orion.Turn('north'); //turn to avoid server kicking us off
+		if (skill <= 500) {
+			Orion.Cast('Greater Heal', self);
+			manaCost = 11
+			delay = 1250
+		} else if (skill <= 600) {
+			Orion.Cast('Magic Reflection');
+			manaCost = 14;
+			delay = 1500;
+		} else if (skill <= 750) {
+			Orion.Cast('Reveal', self);
+			manaCost = 20;
+			delay = 1750;
+		} else if (skill <= 900) {
+			Orion.Cast('Mass Dispel', self);
+			manaCost = 40;
+			delay = 2000;
+		} else if(skill < 1200) {
+			Orion.Cast('Earthquake');
+			manaCost = 50;
+			delay = 2250;
+		}
+		Orion.Wait(delay * 3);
+		if(Player.Mana() < manaCost) {
+			Orion.UseSkill('Meditation');
+			Orion.Wait(10000);
+		}
+		Orion.Turn('south');
+		Orion.Wait(250);
+		skill = Orion.SkillValue('Magery','base');
+	}
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data version="0">
+    <speech text="Global Chat is now connected." color="0xFFFF" fullmatch="true"/>
+    <speech text="You must wait to perform another action." color="0xFFFF" fullmatch="true"/>
+    <speech text="You prepare to strike quickly." color="0xFFFF" fullmatch="true"/>
+    <speech text="You attack with lightning precision!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You did not earn the right to loot this creature!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Who will you use the bandages on?" color="0xFFFF" fullmatch="true"/>
+    <speech text="all follow me" color="0xFFFF" fullmatch="true"/>
+    <speech text="You may not loot this corpse." color="0xFFFF" fullmatch="true"/>
+    <speech text="all stay" color="0xFFFF" fullmatch="true"/>
+    <speech text="all guard me" color="0xFFFF" fullmatch="true"/>
+    <speech text="all attack" color="0xFFFF" fullmatch="true"/>
+    <speech text="all follow me" color="0xFFFF" fullmatch="true"/>
+    <speech text="You are now under the protection of the town guards." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have left the protection of the town guards." color="0xFFFF" fullmatch="true"/>
+    <speech text="You attack with lightning speed!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You begin applying the bandages." color="0xFFFF" fullmatch="true"/>
+    <speech text="Bank container has" color="0xFFFF" fullmatch="false"/>
+    <speech text="gold has been deposited into your bank box." color="0xFFFF" fullmatch="false"/>
+    <speech text="Opening door..." color="0xFFFF" fullmatch="true"/>
+    <speech text="You gain in Perfection as you precisely strike your opponent." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have lost all Perfection in fighting this opponent." color="0xFFFF" fullmatch="true"/>
+    <speech text="That being is not damaged!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Your fingers slip!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You cannot move!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You have lost some Perfection in fighting this opponent." color="0xFFFF" fullmatch="true"/>
+    <speech text="You started Honorable Combat!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Target what you wish to honor." color="0xFFFF" fullmatch="true"/>
+    <speech text="You no longer embrace your honor" color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained a little fame." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained a little karma." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained a lot of fame." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained a lot of karma." color="0xFFFF" fullmatch="true"/>
+    <speech text="You are too far away to honor your opponent" color="0xFFFF" fullmatch="true"/>
+    <speech text="You cannot honor this monster because it is too damaged." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained some fame." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained some karma." color="0xFFFF" fullmatch="true"/>
+    <speech text="You don't need to declare again. You are already under Honorable Combat with this target." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained in Honor." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained a good amount of fame." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained a good amount of karma." color="0xFFFF" fullmatch="true"/>
+    <speech text="You are DEAD!" color="0xFFFF" fullmatch="true"/>
+    <speech text="gold has been removed from your bank box." color="0xFFFF" fullmatch="false"/>
+    <speech text="I am dead and cannot do that." color="0xFFFF" fullmatch="true"/>
+    <speech text="You quickly gather all of your belongings." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have Achieved Perfection in inflicting damage to this opponent!" color="0xFFFF" fullmatch="true"/>
+    <speech text="all kill" color="0xFFFF" fullmatch="true"/>
+    <speech text="The moons of Trammel and Felucca align to preserve your virtue status and city loyalty." color="0xFFFF" fullmatch="true"/>
+    <speech text="You are too young to get a gift." color="0xFFFF" fullmatch="true"/>
+    <speech text="You prepare to focus all of your abilities into your next strike." color="0xFFFF" fullmatch="true"/>
+    <speech text="You focus all of your abilities and strike with deadly force!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Global Chat is now connected." color="0xFFFF" fullmatch="true"/>
+    <speech text="Strong magics have redirected you to a safer location!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You begin to summon a mirror image of yourself." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained in Spirituality." color="0xFFFF" fullmatch="true"/>
+    <speech text="Global Chat Online" color="0xFFFF" fullmatch="true"/>
+    <speech text=" : joined the party." color="0xFFFF" fullmatch="false"/>
+    <speech text="Your attack has been diverted to a nearby mirror image of your target!" color="0xFFFF" fullmatch="true"/>
+    <speech text="The manor lord is unavailable. Please use the teleporter on your right." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have been added to the party." color="0xFFFF" fullmatch="true"/>
+    <speech text="The enchantment on your weapon has expired." color="0xFFFF" fullmatch="true"/>
+    <speech text="You deliver a paralyzing blow!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You heal what little damage your patient had." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your attack was parried!" color="0xFFFF" fullmatch="true"/>
+    <speech text="The acid is damaging you!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Some of the damage you received has been converted to heal you." color="0xFFFF" fullmatch="true"/>
+    <speech text="You manage to untangle yourself." color="0xFFFF" fullmatch="true"/>
+    <speech text="The vendor map has been placed in your backpack." color="0xFFFF" fullmatch="true"/>
+    <speech text="You destroyed the item." color="0xFFFF" fullmatch="true"/>
+    <speech text="The intense cold is damaging you!" color="0xFFFF" fullmatch="false"/>
+    <speech text="The poison seems to have no effect." color="0xFFFF" fullmatch="false"/>
+    <speech text="You become entangled in the acid drenched roots." color="0xFFFF" fullmatch="true"/>
+    <speech text="You manage to divert the attack onto one of your nearby mirror images." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have lost a good amount of karma." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have lost a little karma." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have lost a lot of karma." color="0xFFFF" fullmatch="true"/>
+    <speech text="The item will be deleted in three minutes." color="0xFFFF" fullmatch="true"/>
+    <speech text="You ready your pet for combat, increasing its battle effectiveness!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained in Valor!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You have lost a lot of fame." color="0xFFFF" fullmatch="true"/>
+    <speech text="My thanks for the patronage." color="0xFFFF" fullmatch="false"/>
+    <speech text="You have been hit by a paralyzing blow!" color="0xFFFF" fullmatch="true"/>
+    <speech text="begins to spasm uncontrollably." color="0xFFFF" fullmatch="false"/>
+    <speech text="seems resistant to the poison" color="0xFFFF" fullmatch="false"/>
+    <speech text="You feel yourself resisting the effects of the poison" color="0xFFFF" fullmatch="false"/>
+    <speech text="You are bleeding!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You bind the wound and stop the bleeding" color="0xFFFF" fullmatch="true"/>
+    <speech text="You feel inspired by the bard's spellsong." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your spell song has been interrupted." color="0xFFFF" fullmatch="true"/>
+    <speech text="All Kill" color="0xFFFF" fullmatch="true"/>
+    <speech text="All Guard Me" color="0xFFFF" fullmatch="true"/>
+    <speech text="All Follow Me" color="0xFFFF" fullmatch="true"/>
+    <speech text="Take a look at my goods." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have gained a path in Valor!" color="0xFFFF" fullmatch="true"/>
+    <speech text="*evades*" color="0xFFFF" fullmatch="true"/>
+    <speech text="All follow me" color="0xFFFF" fullmatch="true"/>
+    <speech text="All kill" color="0xFFFF" fullmatch="true"/>
+    <speech text="All guard me" color="0xFFFF" fullmatch="true"/>
+    <speech text="The open flame begins to scatter the swarm of insects!" color="0xFFFF" fullmatch="false"/>
+    <speech text="You cannot gain more Spirituality." color="0xFFFF" fullmatch="true"/>
+    <speech text="ALL KILL" color="0xFFFF" fullmatch="true"/>
+    <speech text="ALL FOLLOW ME" color="0xFFFF" fullmatch="true"/>
+    <speech text="ALL KILL" color="0xFFFF" fullmatch="true"/>
+    <speech text="The bard's spellsong fills you with a feeling of resilience." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your Blood Oath has been broken." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your skin turns dry and corpselike." color="0xFFFF" fullmatch="true"/>
+    <speech text="You feel yourself resisting magical energy!" color="0xFFFF" fullmatch="true"/>
+    <speech text="ALL GUARD ME" color="0xFFFF" fullmatch="true"/>
+    <speech text="ALL STAY" color="0xFFFF" fullmatch="true"/>
+    <speech text="Your mind feels normal again." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your skin returns to normal." color="0xFFFF" fullmatch="true"/>
+    <speech text="The damage you received fuels your battle fury." color="0xFFFF" fullmatch="true"/>
+    <speech text="You prepare to Backstab your opponent." color="0xFFFF" fullmatch="true"/>
+    <speech text="You begin to move quietly." color="0xFFFF" fullmatch="true"/>
+    <speech text="The soul charge effect converts some of the damage you received into mana." color="0xFFFF" fullmatch="true"/>
+    <speech text="You play your music and your target becomes angered.  Whom do you wish them to attack?" color="0xFFFF" fullmatch="true"/>
+    <speech text="Being perfectly rested, you shove them out of the way." color="0xFFFF" fullmatch="true"/>
+    <speech text="You can move!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Your loyalty to the Ophidians has increased by " color="0xFFFF" fullmatch="false"/>
+    <speech text="You strike and hide in the shadows!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You prepare to hit your opponent with a Death Strike." color="0xFFFF" fullmatch="true"/>
+    <speech text="You missed your opponent with a Death Strike." color="0xFFFF" fullmatch="true"/>
+    <speech text="You can breathe normally again." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have been mortally wounded!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You are no longer mortally wounded." color="0xFFFF" fullmatch="true"/>
+</data>

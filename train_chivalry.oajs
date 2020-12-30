@@ -1,0 +1,29 @@
+function trainChivalry() {
+	var skill = Orion.SkillValue('Chivalry','base');
+	var manaCost = 0;
+	var delay = 1000;
+	
+	while(skill < Orion.SkillValue('Chivalry','cap')) {
+		if (skill < 450) {
+			Orion.Cast('Consecrate Weapon');
+			manaCost = 10;
+		} else if (skill < 600) {
+			Orion.Cast('Divine Fury');
+			manaCost = 15;
+		} else if (skill < 700) {
+			Orion.Cast('Enemy of One');
+			manaCost = 20;
+		} else if(skill < 900) {
+			Orion.Cast('Holy Light');
+			manaCost = 10;
+		} else {
+			Orion.Cast('Noble Sacrifice');
+			manaCost = 20;
+		}
+		Orion.Wait(delay * 3);
+		if(Player.Mana() < manaCost) {
+			Orion.Wait(10000);
+		}
+		skill = Orion.SkillValue('Chivalry','base');
+	}
+}

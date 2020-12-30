@@ -1,0 +1,25 @@
+function AutoLoot() 
+{
+    if (!Player.Dead()) 
+    {
+           var corpses = Orion.FindType('0x2006', '-1', ground, '', 2);
+           Orion.Print(corpses);
+            for (var c = 0; c < corpses.length; c++) 
+            {
+                   Orion.OpenContainer(corpses[c])
+                    Orion.MoveItem('0x0EED', 0, backpack);
+                        Orion.Wait(1300);
+                //var list = Orion.FindList('lootlist', corpses[c]);
+                //Orion.Print(list);
+               // Orion.ResetIgnoreList();
+                //for (var i = 0; i < list.length; i++) 
+               // {
+                //        Orion.MoveItem('0x0EED', 0, backpack);
+               //         Orion.Wait(1300);
+                //}
+                Orion.Ignore(corpses[c]);
+                   Orion.Wait(500);
+            }
+            Orion.Wait(500);
+      }
+} 

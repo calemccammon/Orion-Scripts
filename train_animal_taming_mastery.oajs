@@ -1,0 +1,28 @@
+function trainAnimalTaming() {
+	var skill = Orion.SkillValue('Animal Taming', 'base');
+	var lore = Orion.SkillValue('Animal Lore', 'base');
+	var pet = '0x063AD000';
+	var isActive = false;
+	
+	while (skill < Orion.SkillValue('Animal Taming', 'cap') || lore < Orion.SkillValue('Animal Lore', 'cap')) {
+		Orion.Cast('Combat Training');
+		Orion.CancelTarget();
+		Orion.CancelWaitGump();
+		if (!isActive) {
+			Orion.WaitForTarget(1000);
+			Orion.TargetObject(pet);
+			Orion.WaitGump(Orion.CreateGumpHook(1));
+		}
+		isActive = !isActive;
+		skill = Orion.SkillValue('Animal Taming', 'base');
+		lore = Orion.SkillValue('Animal Lore', 'base');
+		Orion.Wait(2000);
+		if (Player.Mana() < 24 && isActive) {
+			Orion.Cast('Combat Training');
+			isActive = false;
+			Orion.Wait(2000);
+			Orion.UseSkill('Meditation')
+			Orion.Wait(10000);
+		}
+	}
+}

@@ -1,0 +1,5 @@
+function cast() {
+	if (!Orion.BuffExists('Curse Weapon')) {
+		Orion.Cast('Curse Weapon');
+	}
+}

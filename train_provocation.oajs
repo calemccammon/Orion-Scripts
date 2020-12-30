@@ -1,0 +1,22 @@
+//Semi-attended script for lower level training
+//Run around (in the wilderness, for example) while skill usage loops
+//Areas:
+//1. Until 55 ish, gamans in Tokuno
+//2. Until 79 ish, Scorpions west of Minoc in desert of Compassion.
+//3. Until 90, Terathon Keep Underground. There's a room where
+//you provoke avengers from a ledge above to a swamp below.
+//4. Mastery until 120.
+function trainProvocation() {
+	Orion.Ignore(self);
+    var target = Orion.FindType("-1", "-1", "ground","live",8,"gray|criminal|red");
+    if (target.length >= 2) {
+		 Orion.UseSkill('Provocation', target[0]);
+		 Orion.Wait(400);
+		 Orion.TargetObject(target[1]);
+		 Orion.Wait(8000);
+    } else {
+   	Orion.Wait(1000);
+    }
+    Orion.IgnoreReset();
+    trainProvocation();
+}

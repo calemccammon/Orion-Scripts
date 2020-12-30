@@ -1,0 +1,5 @@
+function cast() {
+	if(!Player.Poisoned() && !Player.Paralyzed() && Player.Hits() < Player.MaxHits()) {
+		Orion.Cast("Greater Heal", self);
+	}
+}

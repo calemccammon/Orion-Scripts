@@ -1,0 +1,16 @@
+function trainSpiritSpeak() {
+	var skill = Orion.SkillValue('Spirit Speak','base');
+	
+	while(skill < Orion.SkillValue('Spirit Speak','cap')) {
+		Orion.Turn('north');  //turn so server doesn't kick us off
+		Orion.UseSkill('Spirit Speak')
+		Orion.Wait(4250);
+		Orion.Turn('south');
+		Orion.Wait(250);
+		skill = Orion.SkillValue('Spirit Speak','base');
+		if (Player.Mana() <= 10) {
+			Orion.UseSkill('Meditation');
+			Orion.Wait(11000);
+		}
+	}
+}
