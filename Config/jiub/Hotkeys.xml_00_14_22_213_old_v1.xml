@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<data version="1" size="7">
-    <hotkey type="3" action="4294967295" running_mode="false" key="65" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/attack_nearest.oajs&quot;);&#10;Orion.Exec(&quot;attackNearest&quot;, null);" toggle_script="false"/>
-    <hotkey type="16" action="12" running_mode="false" key="81" modifiers="8" name="" external_code="" toggle_script="false"/>
-    <hotkey type="16" action="12" running_mode="false" key="87" modifiers="8" name="" external_code="" toggle_script="false"/>
-    <hotkey type="3" action="4294967295" running_mode="false" key="69" modifiers="8" name="" external_code="Orion.LoadScript(&quot;orion-scripts/cast_animal_form_llama.oajs&quot;);&#10;Orion.Exec(&quot;cast&quot;, null);" toggle_script="false"/>
-    <hotkey type="3" action="4294967295" running_mode="false" key="88" modifiers="2" name="" external_code="Orion.LoadScript(&quot;orion-scripts/auto_bandage.oajs&quot;);&#10;Orion.Exec(&quot;keepBandaging&quot;, null);" toggle_script="true"/>
-    <hotkey type="16" action="23" running_mode="false" key="70" modifiers="8" name="" external_code="" toggle_script="false"/>
-</data>
