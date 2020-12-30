@@ -1,6 +1,0 @@
-function keepBandaging() {
-	while((Player.Hits() < Player.MaxHits() || Player.Poisoned()) && !Orion.BuffExists("Healing")) {
-			Orion.BandageSelf();
-	}
-	keepBandaging();
-}
