@@ -1,5 +1,0 @@
-function cast() {
-	if(!Player.Paralyzed() && lasttarget != null  && lasttarget != self && Orion.GetDistance(lasttarget) <= 10) {
-		Orion.Cast("Energy Bolt", lasttarget)
-	}
-}

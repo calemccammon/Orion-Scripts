@@ -1,0 +1,47 @@
+function mageryInvisibility() {
+	if(!Player.Paralyzed()) {
+		Orion.Cast("Invisibility", self);
+	}
+}
+
+function mageryHeal() {
+	if(!Player.Poisoned() && !Player.Paralyzed() && Player.Hits() < Player.MaxHits()) {
+		Orion.Cast("Heal", self);
+	}
+}
+
+function mageryGreaterHeal() {
+	if(!Player.Poisoned() && !Player.Paralyzed() && Player.Hits() < Player.MaxHits()) {
+		Orion.Cast("Greater Heal", self);
+	}
+}
+
+function mageryFireball() {
+	if(!Player.Paralyzed() && lasttarget != null  && lasttarget != self && Orion.GetDistance(lasttarget) <= 10) {
+		Orion.Cast("Fireball", lasttarget)
+	}
+}
+
+function mageryEnergyBolt() {
+	if(!Player.Paralyzed() && lasttarget != null  && lasttarget != self && Orion.GetDistance(lasttarget) <= 10) {
+		Orion.Cast("Energy Bolt", lasttarget)
+	}
+}
+
+function mageryCure() {
+	if(Player.Poisoned()) {
+		Orion.Cast("Cure", self);
+	}
+}
+
+function mageryBless() {
+	if(!Orion.BuffExists("Bless")) {
+		Orion.Cast("Bless", self);
+	}
+}
+
+function mageryArchCure() {
+	if(!Player.Paralyzed() && Player.Poisoned()) {
+		Orion.Cast('Arch Cure', self);
+	}
+}

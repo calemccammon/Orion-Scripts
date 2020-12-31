@@ -1,5 +1,0 @@
-function cast() {
-	if (Player.Followers() < 5) {
-		Orion.Cast('Mirror Image');
-	}
-}

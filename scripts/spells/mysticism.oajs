@@ -1,0 +1,22 @@
+function mysticismStoneForm() {
+	Orion.Cast('Stone Form');
+}
+
+function mysticismRisingColossus() {
+	if (!Player.Paralyzed() && Player.Followers() == 0) {
+		Orion.Cast('Rising Colossus');
+	}
+}
+
+function mysticismEnchantLightning() {
+	if(!Orion.BuffExists("Enchant")) {
+		Orion.Cast('Enchant');
+		Orion.WaitGump(Orion.CreateGumpHook(4));
+	}
+}
+
+function mysticismCleansingWindsSelf() {
+	if (!Player.Paralyzed() && (Player.Hits() < Player.MaxHits() || Player.Poisoned())) {
+		Orion.Cast('Cleansing Winds', self);
+	}
+}

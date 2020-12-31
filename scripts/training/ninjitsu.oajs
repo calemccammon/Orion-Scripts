@@ -17,16 +17,16 @@ function trainNinjitsu() {
 	}
 }
 
-function useMirrorImage() {
+function useMirrorImage(stub) {
 	if (Player.Mana() < 10) {
 		Orion.Wait(10000);
 	}
 	Orion.Cast('Mirror Image');
 	Orion.Wait(4000);
-	attackNearest(); //kill our mirror image
+	attackNearestMirrorImage(); //kill our mirror image
 }
 
-function attackNearest() {
+function attackNearestMirrorImage(stub) {
     Orion.Ignore(self);
     var target = Orion.FindType("-1", "-1", "ground", "near|live", 18, "blue|gray");
     if (target.length != 0) {
@@ -45,7 +45,7 @@ function attackNearest() {
 //3. Shadow jump 1 tile south
 //4. If fizzle, return to starting tile
 //This is good until 87.5, after which you can't gain from Shadowjump.
-function useShadowJump() {
+function useShadowJump(stub) {
 	Orion.ClearJournal();
 	while (!hasFizzled()) {
 		if(Player.Mana() < 12) {
@@ -68,6 +68,6 @@ function useShadowJump() {
 	}
 }
 
-function hasFizzled() {
+function hasFizzled(stub) {
 	return Orion.InJournal('The spell fizzles.');
 }

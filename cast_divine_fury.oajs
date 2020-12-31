@@ -1,5 +1,0 @@
-function cast() {
-	if(!Orion.BuffExists("Divine Fury")) {
-		Orion.Cast("Divine Fury");
-	}
-}

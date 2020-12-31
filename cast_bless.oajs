@@ -1,5 +1,0 @@
-function cast() {
-	if(!Orion.BuffExists("Bless")) {
-		Orion.Cast("Bless", self);
-	}
-}

@@ -1,5 +1,0 @@
-function cast() {
-	if(!Orion.BuffExists("Counter Attack")) {
-		Orion.Cast("Counter Attack");
-	}
-}

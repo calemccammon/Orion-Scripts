@@ -1,4 +1,4 @@
-function cast() {
+function spellweavingThunderstorm() {
 	if(!Player.Paralyzed()) {
 		Orion.Cast("Thunderstorm");
 	}

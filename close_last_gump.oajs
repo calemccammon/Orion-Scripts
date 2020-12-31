@@ -1,6 +1,0 @@
-function closeLastGump() {
-	Orion.ClosePaperdoll(self);
-	if(Orion.GetLastGump() != null) {
-		Orion.GetLastGump().Close();
-	}
-}

@@ -1,5 +1,0 @@
-function cast() {
-	if (!Player.Paralyzed() && (Player.Hits() < Player.MaxHits() || Player.Poisoned())) {
-		Orion.Cast('Cleansing Winds', self);
-	}
-}

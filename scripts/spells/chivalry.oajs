@@ -1,0 +1,27 @@
+function chivalryEnemyOfOne() {
+	Orion.Cast("Enemy of One");
+}
+
+function chivalryDivineFury() {
+	if(!Orion.BuffExists("Divine Fury")) {
+		Orion.Cast("Divine Fury");
+	}
+}
+
+function chivalryConsecrateWeapon() {
+	if(!Orion.BuffExists("Consecrate Weapon")) {
+		Orion.Cast("Consecrate Weapon");
+	}
+}
+
+function chivalryCloseWounds() {
+	if(Player.Hits() < Player.MaxHits() && !Player.Poisoned()) {
+		Orion.Cast("Close Wounds", self);
+	}
+}
+
+function chivalryCleanseByFire() {
+	if(Player.Poisoned()) {
+		Orion.Cast("Cleanse by Fire", self);
+	}
+}

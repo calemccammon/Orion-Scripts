@@ -1,0 +1,29 @@
+function bushidoMomentumStrike() {
+	if(!Orion.BuffExists("Momentum Strike")) {
+		Orion.Cast("Momentum Strike");
+	}
+}
+
+function bushidoLightningStrike() {
+	if(!Orion.BuffExists("Lightning Strike")) {
+		Orion.Cast("Lightning Strike");
+	}
+}
+
+function bushidoEvasion() {
+	if(!Orion.BuffExists("Evasion")) {
+		Orion.Cast("Evasion");
+	}
+}
+
+function bushidoCounterAttack() {
+	if(!Orion.BuffExists("Counter Attack")) {
+		Orion.Cast("Counter Attack");
+	}
+}
+
+function bushidoConfidence() {
+	if(!Orion.BuffExists("Confidence")) {
+		Orion.Cast("Confidence");
+	}
+}

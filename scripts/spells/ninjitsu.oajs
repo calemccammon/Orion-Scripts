@@ -1,0 +1,21 @@
+function ninjitsuMirrorImage() {
+	if (Player.Followers() < 5) {
+		Orion.Cast('Mirror Image');
+	}
+}
+
+function ninjitsuAnimalFormWolf() {
+	Orion.CancelWaitGump();
+	Orion.Wait(250);
+	Orion.Cast('Animal Form');
+	if(!Orion.BuffExists("Animal Form")) {
+		Orion.WaitGump(Orion.CreateGumpHook(103));
+	}
+}
+
+function ninjitsuAnimalFormLlama() {
+	Orion.Cast('Animal Form');
+	if(!Orion.BuffExists("Animal Form")) {
+		Orion.WaitGump(Orion.CreateGumpHook(102));
+	}
+}

@@ -1,0 +1,11 @@
+function necromancyWither() {
+	if(!Player.Paralyzed()) {
+		Orion.Cast("Wither");
+	}
+}
+
+function necromancyCurseWeapon() {
+	if (!Orion.BuffExists('Curse Weapon')) {
+		Orion.Cast('Curse Weapon');
+	}
+}

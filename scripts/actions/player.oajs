@@ -1,3 +1,7 @@
 function openBackPack() {
 	Orion.OpenContainer(backpack);
 }
+
+function paperdoll() {
+	Orion.OpenPaperdoll(self);
+}

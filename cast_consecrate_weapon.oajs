@@ -1,5 +1,0 @@
-function cast() {
-	if(!Orion.BuffExists("Consecrate Weapon")) {
-		Orion.Cast("Consecrate Weapon");
-	}
-}

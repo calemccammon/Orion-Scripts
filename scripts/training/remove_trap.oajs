@@ -42,7 +42,7 @@ function solve(solution) {
 	}
 }
 
-function openKit() {
+function openKit(stub) {
 	Orion.Wait(1000);
 	Orion.UseSkill('Remove Trap');
 	Orion.WaitForTarget(1000);
@@ -52,10 +52,10 @@ function openKit() {
 	}
 }
 
-function isWrong() {
+function isWrong(stub) {
 	return Orion.InJournal("fail to disarm");
 }
 
-function isRight() {
+function isRight(stub) {
 	return Orion.InJournal("successfully disarm");
 }

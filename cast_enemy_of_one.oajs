@@ -1,3 +1,0 @@
-function cast() {
-	Orion.Cast("Enemy of One");
-}
