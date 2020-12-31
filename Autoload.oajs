@@ -1,0 +1,36 @@
+//#include includes.oajs
+
+function Autostart() {
+	keepBandaging();
+	printFollowers();
+}
+
+function keepBandaging(stub) {
+	if (Orion.SkillValue('Healing', 'real') > 0) {
+		var doBandage = Player.Hits() < Player.MaxHits() || Player.Poisoned();
+		var dex = Player.Dex();
+		var bandageTimer = 8000;
+		
+		if (dex > 80.0) {
+			var offset = (dex - 80.0) / 20.0;
+			bandageTimer = (8.0 - offset) * 1000.0;
+		}
+		
+		if(!Player.Dead() && !Player.Hidden() &&  doBandage) {
+			Orion.BandageSelf();
+			Orion.Wait(bandageTimer);
+		}
+	}
+	Orion.Wait(500);
+	keepBandaging();
+}
+
+function printFollowers(stub) {
+	var followers = Player.Followers();
+	Orion.Wait(500);
+	var tempFollowers = Player.Followers();
+	if (followers != tempFollowers) {
+		Orion.Print('[Followers]: ' + tempFollowers);
+	}
+	printFollowers();
+}

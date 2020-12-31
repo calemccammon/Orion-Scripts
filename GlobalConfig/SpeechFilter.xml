@@ -130,4 +130,5 @@
     <speech text="Excuse me please traveler, might I have a little of your time?" color="0xFFFF" fullmatch="true"/>
     <speech text="You successfully decode a treasure map!" color="0xFFFF" fullmatch="true"/>
     <speech text="*The pet's battle experience has slightly increased!*" color="0xFFFF" fullmatch="true"/>
+    <speech text="You perform a masterful defense!" color="0xFFFF" fullmatch="true"/>
 </data>
