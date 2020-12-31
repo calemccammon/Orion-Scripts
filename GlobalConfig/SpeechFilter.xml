@@ -124,4 +124,10 @@
     <speech text="You can breathe normally again." color="0xFFFF" fullmatch="true"/>
     <speech text="You have been mortally wounded!" color="0xFFFF" fullmatch="true"/>
     <speech text="You are no longer mortally wounded." color="0xFFFF" fullmatch="true"/>
+    <speech text="Wait!  I have an opportunity for you to make some gold!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Adventurer!  I have an offer for you." color="0xFFFF" fullmatch="true"/>
+    <speech text="You there!  Care to hear how to earn some easy gold?" color="0xFFFF" fullmatch="true"/>
+    <speech text="Excuse me please traveler, might I have a little of your time?" color="0xFFFF" fullmatch="true"/>
+    <speech text="You successfully decode a treasure map!" color="0xFFFF" fullmatch="true"/>
+    <speech text="*The pet's battle experience has slightly increased!*" color="0xFFFF" fullmatch="true"/>
 </data>
