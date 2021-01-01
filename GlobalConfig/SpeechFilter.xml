@@ -139,4 +139,10 @@
     <speech text="aaahhh. . . that's the good stuff!" color="0xFFFF" fullmatch="true"/>
     <speech text="burp." color="0xFFFF" fullmatch="true"/>
     <speech text="got any salt?" color="0xFFFF" fullmatch="true"/>
+    <speech text="Where shall you dig for your treasure?" color="0xFFFF" fullmatch="true"/>
+    <speech text="mmm. . ." color="0xFFFF" fullmatch="true"/>
+    <speech text="A player has been removed from your party." color="0xFFFF" fullmatch="true"/>
+    <speech text="The master of this realm has been slain! You may only stay here so long." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your party has disbanded." color="0xFFFF" fullmatch="true"/>
+    <speech text=" : rejoined the party." color="0xFFFF" fullmatch="false"/>
 </data>

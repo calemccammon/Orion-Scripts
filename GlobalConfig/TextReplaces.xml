@@ -37,4 +37,5 @@
     <replace originaltext="* You feel extremely weak and are in severe pain! *" originalcolor="0xFFFF" replacedtext="*poisoned*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="mana to perform that attack" originalcolor="0xFFFF" replacedtext="[Casting] Not enough mana" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="false" systemtooverhead="false"/>
     <replace originaltext="*You delicately manipulate the trigger mechanism...*" originalcolor="0xFFFF" replacedtext="*disarming*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="You have found the treasure but something is preventing the chest from being dug up." originalcolor="0xFFFF" replacedtext="[System] Dig again" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
 </data>
