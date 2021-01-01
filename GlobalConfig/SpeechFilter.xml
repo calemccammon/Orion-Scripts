@@ -131,4 +131,12 @@
     <speech text="You successfully decode a treasure map!" color="0xFFFF" fullmatch="true"/>
     <speech text="*The pet's battle experience has slightly increased!*" color="0xFFFF" fullmatch="true"/>
     <speech text="You perform a masterful defense!" color="0xFFFF" fullmatch="true"/>
+    <speech text="The old chest crumbles when you hit it." color="0xFFFF" fullmatch="true"/>
+    <speech text="that hit the spot. . ." color="0xFFFF" fullmatch="true"/>
+    <speech text="I'm still hungry. . ." color="0xFFFF" fullmatch="true"/>
+    <speech text="The food is good, but the service stinks!" color="0xFFFF" fullmatch="true"/>
+    <speech text="The treasure is marked by the red pin. Grab a shovel and go dig it up!" color="0xFFFF" fullmatch="true"/>
+    <speech text="aaahhh. . . that's the good stuff!" color="0xFFFF" fullmatch="true"/>
+    <speech text="burp." color="0xFFFF" fullmatch="true"/>
+    <speech text="got any salt?" color="0xFFFF" fullmatch="true"/>
 </data>
