@@ -145,4 +145,8 @@
     <speech text="The master of this realm has been slain! You may only stay here so long." color="0xFFFF" fullmatch="true"/>
     <speech text="Your party has disbanded." color="0xFFFF" fullmatch="true"/>
     <speech text=" : rejoined the party." color="0xFFFF" fullmatch="false"/>
+    <speech text="You open a magical gate to another location" color="0xFFFF" fullmatch="true"/>
+    <speech text="Your skin blisters from the heat!" color="0xFFFF" fullmatch="true"/>
+    <speech text="*Your attempt fails as the the mechanism jams and you are attacked by an Ancient Chest Guardian!*" color="0xFFFF" fullmatch="true"/>
+    <speech text="The hydra rears its dragon-like heads and assaults you with its elemental breath!" color="0xFFFF" fullmatch="true"/>
 </data>

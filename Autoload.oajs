@@ -6,7 +6,7 @@ function Autostart() {
 }
 
 function keepBandaging(stub) {
-	if (Orion.SkillValue('Healing', 'real') > 0) {
+	if (Orion.SkillValue('Healing', 'real') > 210) {
 		var doBandage = Player.Hits() < Player.MaxHits() || Player.Poisoned();
 		var dex = Player.Dex();
 		var bandageTimer = 8000;

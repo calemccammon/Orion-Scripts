@@ -6,7 +6,11 @@ function trainMagery() {
 	while(skill < Orion.SkillValue('Magery','cap')) {
 		Orion.CancelTarget();
 		Orion.Turn('north'); //turn to avoid server kicking us off
-		if (skill <= 500) {
+		if (skill <= 370) {
+			Orion.Cast('Unlock', self);
+			manaCost = 9;
+			delay = 1000;
+		} else if (skill <= 500) {
 			Orion.Cast('Greater Heal', self);
 			manaCost = 11
 			delay = 1250
