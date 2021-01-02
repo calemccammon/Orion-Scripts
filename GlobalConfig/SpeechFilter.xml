@@ -149,5 +149,11 @@
     <speech text="Your skin blisters from the heat!" color="0xFFFF" fullmatch="true"/>
     <speech text="*Your attempt fails as the the mechanism jams and you are attacked by an Ancient Chest Guardian!*" color="0xFFFF" fullmatch="true"/>
     <speech text="The hydra rears its dragon-like heads and assaults you with its elemental breath!" color="0xFFFF" fullmatch="true"/>
-    <speech text="&gt;Avatar: " color="0xFFFF" fullmatch="false"/>
+    <speech text="WWW. UL T I M A C O D E S .COM" color="0xFFFF" fullmatch="false"/>
+    <speech text=" is now guarding you." color="0xFFFF" fullmatch="false"/>
+    <speech text="Which trap will you attempt to disarm?" color="0xFFFF" fullmatch="true"/>
+    <speech text="*The pet does not appear to train from that*" color="0xFFFF" fullmatch="true"/>
+    <speech text="What do you want to pick?" color="0xFFFF" fullmatch="true"/>
+    <speech text="You have been hit by a critical strike!" color="0xFFFF" fullmatch="true"/>
+    <speech text="*A grubber appears and ganks a piece of your loot!*" color="0xFFFF" fullmatch="true"/>
 </data>

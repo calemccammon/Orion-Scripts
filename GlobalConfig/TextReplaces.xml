@@ -19,7 +19,7 @@
     <replace originaltext="You apply the bandages, but they barely help." originalcolor="0xFFFF" replacedtext="[Healing] Failed" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You must wait a few moments to use another skill." originalcolor="0xFFFF" replacedtext="[Status] Busy" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You cannot perform this special move right now." originalcolor="0xFFFF" replacedtext="[Status] Blocked" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
-    <replace originaltext="The poison seems to have worn off." originalcolor="0xFFFF" replacedtext="[Status] Cured" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="The poison seems to have worn off." originalcolor="0xFFFF" replacedtext="[Healing] Cured" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You have failed to cure your target!" originalcolor="0xFFFF" replacedtext="[Healing] Failed" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="Your equipment is severely damaged." originalcolor="0xFFFF" replacedtext="*gear breaking*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="I can't reach that." originalcolor="0xFFFF" replacedtext="*out of range*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
@@ -31,13 +31,16 @@
     <replace originaltext="Whom do you wish to incite?" originalcolor="0xFFFF" replacedtext="[Music] Provoking..." replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="Your music succeeds, as you start a fight." originalcolor="0xFFFF" replacedtext="[Music] Provoke - Success" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="Choose the target for your song of discordance." originalcolor="0xFFFF" replacedtext="[Music] Discording..." replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
-    <replace originaltext="You have been cured of all poisons." originalcolor="0xFFFF" replacedtext="[Status] Cured" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="You have been cured of all poisons." originalcolor="0xFFFF" replacedtext="[Healing] Cured" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You have been revealed!" originalcolor="0xFFFF" replacedtext="*revealed*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You can't seem to hide right now." originalcolor="0xFFFF" replacedtext="*can't hide*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="* You feel extremely weak and are in severe pain! *" originalcolor="0xFFFF" replacedtext="*poisoned*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="mana to perform that attack" originalcolor="0xFFFF" replacedtext="[Casting] Not enough mana" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="false" systemtooverhead="false"/>
     <replace originaltext="*You delicately manipulate the trigger mechanism...*" originalcolor="0xFFFF" replacedtext="*disarming*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
-    <replace originaltext="You have found the treasure but something is preventing the chest from being dug up." originalcolor="0xFFFF" replacedtext="[System] Dig again" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="You have found the treasure but something is preventing the chest from being dug up." originalcolor="0xFFFF" replacedtext="[Digging] Try again" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You fail to make anything of the map." originalcolor="0xFFFF" replacedtext="*decode fail*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You are still too dazed from being knocked off your mount to ride." originalcolor="0xFFFF" replacedtext="*dazed*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="You dig and dig but fail to find any treasure." originalcolor="0xFFFF" replacedtext="[Digging] Failed" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="You have cured the target of all poisons!" originalcolor="0xFFFF" replacedtext="[Healing] Cured" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="This treasure hunt has already been completed." originalcolor="0xFFFF" replacedtext="*completed*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
 </data>
