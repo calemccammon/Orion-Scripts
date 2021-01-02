@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data version="0" size="3">
-    <findlist name="lootlist">
-        <item graphic="0x0E7C" color="0x0A5C" comment="" count="0"/>
-        <item graphic="0x14FB" color="0x0000" comment="35 Lockpick" count="0"/>
-        <item graphic="0x0FC0" color="0x0000" comment="Mapmaker's Pen" count="0"/>
-    </findlist>
-    <findlist name="sell_maps">
-        <item graphic="0x14EB" color="0x0000" comment="" count="0"/>
+<data version="0" size="2">
+    <findlist name="tmaps">
+        <item graphic="0x0F26" color="0x0000" comment="Diamond" count="0"/>
+        <item graphic="0x0EED" color="0x0000" comment="Gold Coin" count="0"/>
+        <item graphic="0x0F16" color="0x0000" comment="Amethyst" count="0"/>
+        <item graphic="0x0F0F" color="0x0000" comment="Star Sapphire" count="0"/>
+        <item graphic="0x0F11" color="0x0000" comment="Sapphire" count="0"/>
+        <item graphic="0x0F18" color="0x0000" comment="Tourmaline" count="0"/>
+        <item graphic="0x0F15" color="0x0000" comment="Citrine" count="0"/>
+        <item graphic="0x0F13" color="0x0000" comment="Ruby" count="0"/>
+        <item graphic="0x0F25" color="0x0000" comment="Amber" count="0"/>
+        <item graphic="0x0F10" color="0x0000" comment="Emerald" count="0"/>
     </findlist>
 </data>

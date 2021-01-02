@@ -149,4 +149,5 @@
     <speech text="Your skin blisters from the heat!" color="0xFFFF" fullmatch="true"/>
     <speech text="*Your attempt fails as the the mechanism jams and you are attacked by an Ancient Chest Guardian!*" color="0xFFFF" fullmatch="true"/>
     <speech text="The hydra rears its dragon-like heads and assaults you with its elemental breath!" color="0xFFFF" fullmatch="true"/>
+    <speech text="&gt;Avatar: " color="0xFFFF" fullmatch="false"/>
 </data>
