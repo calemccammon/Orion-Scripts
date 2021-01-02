@@ -4,11 +4,15 @@ function trainMysticism() {
 	var delay = 0;
 	
 	while(skill < Orion.SkillValue('Mysticism','cap')) {
-		if (skill < 400) {
+		if (skill < 270) {
 			Orion.Cast('Healing Stone', self);
 			manaCost = 4;
-			delay = 5000;
-		} else if (skill <= 630) {
+			delay = 5250;
+		} else if (skill < 380) {
+			Orion.Cast('Purge Magic', self);
+			manaCost = 6;
+			delay = 1250;
+		}else if (skill <= 630) {
 			Orion.Cast('Stone Form');
 			manaCost = 11;
 			delay = 1250;
