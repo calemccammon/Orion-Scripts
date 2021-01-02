@@ -15,7 +15,7 @@ function trainMysticism() {
 		}else if (skill <= 630) {
 			Orion.Cast('Stone Form');
 			manaCost = 11;
-			delay = 1250;
+			delay = 1500;
 		} else if (skill <= 800) {
 			Orion.Cast('Cleansing Winds', self);
 			manaCost = 20;
