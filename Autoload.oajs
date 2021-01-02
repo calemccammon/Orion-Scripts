@@ -1,8 +1,8 @@
 //#include includes.oajs
 
 function Autostart() {
-	keepBandaging();
-	printFollowers();
+	Orion.Exec('keepBandaging', true, null);
+	Orion.Exec('printFollowers', true, null);
 }
 
 function keepBandaging(stub) {
