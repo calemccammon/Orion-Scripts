@@ -43,4 +43,5 @@
     <replace originaltext="You dig and dig but fail to find any treasure." originalcolor="0xFFFF" replacedtext="[Digging] Failed" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You have cured the target of all poisons!" originalcolor="0xFFFF" replacedtext="[Healing] Cured" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="This treasure hunt has already been completed." originalcolor="0xFFFF" replacedtext="*completed*" replacedcolor="0xFFFF" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="You are invited to join the party.  Type /accept to join or /decline to dellcine the offer." originalcolor="0xFFFF" replacedtext="*** Party Invite ***" replacedcolor="0x0000FF" type="0" mode="0" fullmatch="false" systemtooverhead="false"/>
 </data>

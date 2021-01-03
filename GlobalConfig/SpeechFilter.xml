@@ -156,4 +156,10 @@
     <speech text="What do you want to pick?" color="0xFFFF" fullmatch="true"/>
     <speech text="You have been hit by a critical strike!" color="0xFFFF" fullmatch="true"/>
     <speech text="*A grubber appears and ganks a piece of your loot!*" color="0xFFFF" fullmatch="true"/>
+    <speech text="The bard's spellsong fills you with a feeling of invincibility." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your loyalty to the Gargoyle Queen has increased by " color="0xFFFF" fullmatch="false"/>
+    <speech text="Your pet has been petrified!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Medusa releases one of the petrified creatures!!" color="0xFFFF" fullmatch="true"/>
+    <speech text=" is bleeding profusely!" color="0xFFFF" fullmatch="false"/>
+    <speech text="You have been poisoned by a lethal arrow!" color="0xFFFF" fullmatch="true"/>
 </data>
