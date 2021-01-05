@@ -45,3 +45,9 @@ function mageryArchCure() {
 		Orion.Cast('Arch Cure', self);
 	}
 }
+
+function mageryEnergyVortex() {
+	if (!Player.Paralyzed() && Player.Followers() < 4) {
+		Orion.Cast('Energy Vortex');
+	}
+}

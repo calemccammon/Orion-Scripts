@@ -162,4 +162,6 @@
     <speech text="Medusa releases one of the petrified creatures!!" color="0xFFFF" fullmatch="true"/>
     <speech text=" is bleeding profusely!" color="0xFFFF" fullmatch="false"/>
     <speech text="You have been poisoned by a lethal arrow!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Your skin sears from the pain of gaseous ether!" color="0xFFFF" fullmatch="false"/>
+    <speech text="Your life force is drained by the death vortex!" color="0xFFFF" fullmatch="false"/>
 </data>

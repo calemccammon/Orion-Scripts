@@ -1,0 +1,97 @@
+//Script for training on shards with Rate Over Time (Siege, Mugen)
+//Rate Over Time supplies timers between guaranteed gains, which
+//change depending on your skill level. Unlike normal shards, it's wasteful
+//to try to train when the timer has not expired.
+
+function trainRateOverTimeMagery() {
+	trainRateOverTime("Magery");
+}
+
+function trainRateOverTimeMysticism() {
+	trainRateOverTime("Mysticism");
+}
+
+function trainRateOverTime(skillToTrain) {
+	var skillLevel = Orion.SkillValue(skillToTrain, "base");
+	var cap = Orion.SkillValue(skillToTrain, "cap");
+	var timer = 0;
+	var startLevel =  0;
+	var iterateDelay = 1000;
+	
+	while (skillLevel < cap) {
+		startLevel = Orion.SkillValue(skillToTrain, "base");
+		if (startLevel >= 700) {
+			timer = 240000;
+		} else if (startLevel >= 800) {
+			timer = 480000;
+		} else if (startLevel >= 900) {
+			timer = 720000;
+		} else if (startLevel >= 1000) {
+			timer = 900000;
+		}
+		
+		Orion.CancelTarget();
+		switch(skillToTrain) {
+			case "Magery":
+				iterateDelay = practiceMagery(skillLevel);
+				break;
+			case "Mysticism":
+				iterateDelay = practiceMysticism(skillLevel);
+				break;
+			default:
+				break;
+		}
+
+		Orion.Wait(iterateDelay);
+		skillLevel = Orion.SkillValue(skillToTrain, "base");
+		
+		//Only wait if we've actually gained.
+		if (startLevel != skillLevel) {
+			Orion.Wait(timer);
+		}
+	}
+}
+
+function practiceMagery(skill) {
+	if (skill <= 370) {
+		Orion.Cast('Unlock', self);
+		return 3000;
+	} else if (skill <= 500) {
+		Orion.Cast('Greater Heal', self);
+		return 3500;
+	} else if (skill <= 600) {
+		Orion.Cast('Magic Reflection');
+		return 4500;
+	} else if (skill <= 750) {
+		Orion.Cast('Reveal', self);
+		return 5000;
+	} else if (skill <= 900) {
+		Orion.Cast('Mass Dispel', self);
+		return 6000;
+	} else if(skill < 1200) {
+		Orion.Cast('Earthquake');
+		return 7000;
+	}
+}
+
+function practiceMysticism(skill) {
+	if (skill < 270) {
+		Orion.Cast('Healing Stone', self);
+		return 15250;
+	} else if (skill < 380) {
+		Orion.Cast('Purge Magic', self);
+		return 3000;
+	} else if (skill <= 630) {
+		Orion.Cast('Stone Form');
+		return 4500;
+	} else if (skill <= 800) {
+		Orion.Cast('Cleansing Winds', self);
+		return 5000;
+	} else if (skill <= 950) {
+		Orion.Cast('Hail Storm', self);
+		return 6000;
+	} else if(skill < 1200) {
+		Orion.Cast('Nether Cyclone', self);
+		return 7000;
+	}
+}

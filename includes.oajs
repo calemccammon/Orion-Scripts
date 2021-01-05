@@ -21,6 +21,7 @@
 //#include scripts/training/peacemaking.oajs
 //#include scripts/training/poisoning.oajs
 //#include scripts/training/provocation.oajs
+//#include scripts/training/rate_over_time.oajs
 //#include scripts/training/remove_trap.oajs
 //#include scripts/training/resisting_spells.oajs
 //#include scripts/training/spellweaving.oajs
