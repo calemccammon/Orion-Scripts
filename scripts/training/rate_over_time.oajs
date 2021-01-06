@@ -20,14 +20,14 @@ function trainRateOverTime(skillToTrain) {
 	
 	while (skillLevel < cap) {
 		startLevel = Orion.SkillValue(skillToTrain, "base");
-		if (startLevel >= 700) {
-			timer = 240000;
-		} else if (startLevel >= 800) {
-			timer = 480000;
-		} else if (startLevel >= 900) {
-			timer = 720000;
-		} else if (startLevel >= 1000) {
+		if (skillLevel >= 1000) {
 			timer = 900000;
+		} else if (skillLevel >= 900) {
+			timer = 720000;
+		} else if (skillLevel >= 800) {
+			timer = 480000;
+		} else if (skillLevel >= 700) {
+			timer = 240000;
 		}
 		
 		Orion.CancelTarget();

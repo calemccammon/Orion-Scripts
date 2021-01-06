@@ -164,4 +164,5 @@
     <speech text="You have been poisoned by a lethal arrow!" color="0xFFFF" fullmatch="true"/>
     <speech text="Your skin sears from the pain of gaseous ether!" color="0xFFFF" fullmatch="false"/>
     <speech text="Your life force is drained by the death vortex!" color="0xFFFF" fullmatch="false"/>
+    <speech text="UOPLAT" color="0xFFFF" fullmatch="false"/>
 </data>
