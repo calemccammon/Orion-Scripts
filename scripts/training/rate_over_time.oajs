@@ -11,6 +11,10 @@ function trainRateOverTimeMysticism() {
 	trainRateOverTime("Mysticism");
 }
 
+function trainRateOverTimeHiding() {
+	trainRateOverTime("Hiding");
+}
+
 function trainRateOverTime(skillToTrain) {
 	var skillLevel = Orion.SkillValue(skillToTrain, "base");
 	var cap = Orion.SkillValue(skillToTrain, "cap");
@@ -37,6 +41,9 @@ function trainRateOverTime(skillToTrain) {
 				break;
 			case "Mysticism":
 				iterateDelay = practiceMysticism(skillLevel);
+				break;
+			case "Hiding":
+				iterateDelay = practiceHiding(skillLevel);
 				break;
 			default:
 				break;
@@ -94,4 +101,9 @@ function practiceMysticism(skill) {
 		Orion.Cast('Nether Cyclone', self);
 		return 7000;
 	}
+}
+
+function practiceHiding(stub) {
+	Orion.UseSkill("Hiding");
+	return 12000;
 }
