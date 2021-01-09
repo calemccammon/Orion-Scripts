@@ -165,4 +165,8 @@
     <speech text="Your skin sears from the pain of gaseous ether!" color="0xFFFF" fullmatch="false"/>
     <speech text="Your life force is drained by the death vortex!" color="0xFFFF" fullmatch="false"/>
     <speech text="UOPLAT" color="0xFFFF" fullmatch="false"/>
+    <speech text="Your confidence wanes." color="0xFFFF" fullmatch="true"/>
+    <speech text="You exude confidence." color="0xFFFF" fullmatch="true"/>
+    <speech text="Please choose your destination." color="0xFFFF" fullmatch="false"/>
+    <speech text="You will be teleported shortly." color="0xFFFF" fullmatch="false"/>
 </data>
