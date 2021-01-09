@@ -1,0 +1,17 @@
+function trainBushido() {
+	var skill = Orion.SkillValue('Bushido','base');
+	
+	while(skill < Orion.SkillValue('Bushido','cap')) {
+		if (skill <= 610) {
+			Orion.Cast('Confidence');
+			Orion.Wait(3000);
+		} else {
+			Orion.Cast('Evasion');
+			Orion.Wait(3000);
+			if (Orion.BuffExists('Evasion')) {
+				Orion.Wait(21000);
+			}
+		}
+		skill = Orion.SkillValue('Bushido','base');
+	}
+}
