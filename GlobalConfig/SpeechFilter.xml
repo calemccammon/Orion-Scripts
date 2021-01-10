@@ -173,4 +173,7 @@
     <speech text="You no longer feel that you could deflect any attack." color="0xFFFF" fullmatch="true"/>
     <speech text="You prepare to respond immediately to the next blocked blow." color="0xFFFF" fullmatch="true"/>
     <speech text="You have been poisoned by a lethal arrow!" color="0xFFFF" fullmatch="false"/>
+    <speech text="You return to your normal stance." color="0xFFFF" fullmatch="true"/>
+    <speech text="You prepare to strike two enemies with one blow." color="0xFFFF" fullmatch="true"/>
+    <speech text="You transfer the momentum of your weapon into another enemy!" color="0xFFFF" fullmatch="true"/>
 </data>
