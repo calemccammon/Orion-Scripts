@@ -176,4 +176,7 @@
     <speech text="You return to your normal stance." color="0xFFFF" fullmatch="true"/>
     <speech text="You prepare to strike two enemies with one blow." color="0xFFFF" fullmatch="true"/>
     <speech text="You transfer the momentum of your weapon into another enemy!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Target an item to repair." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your arrow hits its mark with velocity!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Whom shall I examine?" color="0xFFFF" fullmatch="true"/>
 </data>

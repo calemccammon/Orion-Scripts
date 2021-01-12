@@ -1,0 +1,8 @@
+function trainAnatomy() {
+	var skill = Orion.SkillValue('Anatomy', 'base');
+	while (skill < Orion.SkillValue('Anatomy', 'cap')) {
+		Orion.UseSkill('Anatomy', lasttarget)
+		Orion.Wait(11000);
+		skill = Orion.SkillValue('Anatomy', 'base');
+	}
+}

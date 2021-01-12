@@ -9,6 +9,7 @@
 //#include scripts/spells/ninjitsu.oajs
 //#include scripts/spells/spellweaving.oajs
 //#include scripts/training/alchemy.oajs
+//#include scripts/training/anatomy.oajs
 //#include scripts/training/animal_taming.oajs
 //#include scripts/training/bushido.oajs
 //#include scripts/training/cartography.oajs
