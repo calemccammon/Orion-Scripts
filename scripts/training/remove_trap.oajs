@@ -1,4 +1,4 @@
-//Brute force solving of the circuit trap for low lever training of Remove Trap.
+//Brute force solving of the circuit trap for low level training of Remove Trap.
 //This will only work up to 75.
 
 var kit = '0xA393';
