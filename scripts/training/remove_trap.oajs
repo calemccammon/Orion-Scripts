@@ -1,3 +1,6 @@
+//Brute force solving of the circuit trap for low lever training of Remove Trap.
+//This will only work up to 75.
+
 var kit = '0xA393';
 
 var solution_1 = [2, 2, 3, 3];
@@ -17,7 +20,7 @@ var solutions = [solution_1, solution_2, solution_3, solution_4, solution_5, sol
 solution_7, solution_8, solution_9, solution_10, solution_11, solution_12];
 
 function trainRemoveTrap() {
-	while (Orion.SkillValue("Remove Trap") < 1000) {
+	while (Orion.SkillValue("Remove Trap") < 750) {
 		openKit();
 		for (var i = 0; i < solutions.length; i++) {
 			Orion.Print("Testing " + (i + 1));
