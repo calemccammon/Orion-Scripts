@@ -1,4 +1,4 @@
-var kit = '0x45FD0C42';
+var kit = '0xA393';
 
 var solution_1 = [2, 2, 3, 3];
 var solution_2 = [2, 3, 2, 3];
@@ -46,7 +46,7 @@ function openKit(stub) {
 	Orion.Wait(1000);
 	Orion.UseSkill('Remove Trap');
 	Orion.WaitForTarget(1000);
-	Orion.TargetObject(kit);
+	Orion.TargetType(kit);
 	if(!Orion.WaitForGump(1000)) {
 		openKit();
 	}

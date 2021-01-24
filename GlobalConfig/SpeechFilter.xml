@@ -149,7 +149,6 @@
     <speech text="Your skin blisters from the heat!" color="0xFFFF" fullmatch="true"/>
     <speech text="*Your attempt fails as the the mechanism jams and you are attacked by an Ancient Chest Guardian!*" color="0xFFFF" fullmatch="true"/>
     <speech text="The hydra rears its dragon-like heads and assaults you with its elemental breath!" color="0xFFFF" fullmatch="true"/>
-    <speech text="WWW. UL T I M A C O D E S .COM" color="0xFFFF" fullmatch="false"/>
     <speech text=" is now guarding you." color="0xFFFF" fullmatch="false"/>
     <speech text="Which trap will you attempt to disarm?" color="0xFFFF" fullmatch="true"/>
     <speech text="*The pet does not appear to train from that*" color="0xFFFF" fullmatch="true"/>
@@ -164,7 +163,6 @@
     <speech text="You have been poisoned by a lethal arrow!" color="0xFFFF" fullmatch="true"/>
     <speech text="Your skin sears from the pain of gaseous ether!" color="0xFFFF" fullmatch="false"/>
     <speech text="Your life force is drained by the death vortex!" color="0xFFFF" fullmatch="false"/>
-    <speech text="UOPLAT" color="0xFFFF" fullmatch="false"/>
     <speech text="Your confidence wanes." color="0xFFFF" fullmatch="true"/>
     <speech text="You exude confidence." color="0xFFFF" fullmatch="true"/>
     <speech text="Please choose your destination." color="0xFFFF" fullmatch="false"/>
@@ -179,4 +177,13 @@
     <speech text="Target an item to repair." color="0xFFFF" fullmatch="true"/>
     <speech text="Your arrow hits its mark with velocity!" color="0xFFFF" fullmatch="true"/>
     <speech text="Whom shall I examine?" color="0xFFFF" fullmatch="true"/>
+    <speech text="*The pet's battle experience has greatly increased!*" color="0xFFFF" fullmatch="true"/>
+    <speech text="all come" color="0xFFFF" fullmatch="true"/>
+    <speech text="ALL COME" color="0xFFFF" fullmatch="true"/>
+    <speech text="You successfully train the pet!" color="0xFFFF" fullmatch="true"/>
+    <speech text="What animal should I look at?" color="0xFFFF" fullmatch="true"/>
+    <speech text="Take a look at your goods." color="0xFFFF" fullmatch="true"/>
+    <speech text="Emptying the trashcan!" color="0xFFFF" fullmatch="true"/>
+    <speech text="The bleeding wounds have healed, you are no longer bleeding!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You feel invigorated by the bard's spellsong." color="0xFFFF" fullmatch="true"/>
 </data>

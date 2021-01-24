@@ -47,4 +47,7 @@
     <replace originaltext="Insufficient mana. You must have at least " originalcolor="0xFFFF" replacedtext="*no mana*" replacedcolor="0x0042" type="0" mode="0" fullmatch="false" systemtooverhead="false"/>
     <replace originaltext="* You begin to feel pain throughout your body! *" originalcolor="0xFFFF" replacedtext="*poisoned*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You repair the item, but it looks a little less durable." originalcolor="0xFFFF" replacedtext="*repaired*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
+    <replace originaltext="You carefully remove the trigger for the purple potion." originalcolor="0xFFFF" replacedtext="*disarmed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="You breathe a sign of relief as you fail to disarm the trap but don't set it off." originalcolor="0xFFFF" replacedtext="*failed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
+    <replace originaltext="You have been poisoned by the creature!" originalcolor="0xFFFF" replacedtext="*poisoned*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
 </data>
