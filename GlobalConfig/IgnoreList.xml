@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data version="0" size="1"/>
+<data version="0" size="3">
+    <ignorelist name="summons">
+        <item serial="0x05F328D1" graphic="0x033D" color="0x0000" comment="a rising colossus"/>
+        <item serial="0x05F324EB" graphic="0x00A4" color="0x0014" comment="an energy vortex"/>
+        <item serial="0x061DD057" graphic="0x002F" color="0x0000" comment="a reaper"/>
+        <item serial="0x05DE817F" graphic="0x023E" color="0x0000" comment="a blade spirit"/>
+    </ignorelist>
+    <ignorelist name="animated_undead">
+        <item serial="0x05DE8845" graphic="0x0094" color="0x0000" comment="a bone mage"/>
+        <item serial="0x05DE8524" graphic="0x0018" color="0x0000" comment="a lich"/>
+        <item serial="0x05DE7CE0" graphic="0x0130" color="0x0000" comment="a flesh golem"/>
+        <item serial="0x05DE7A6C" graphic="0x0135" color="0x0000" comment="a patchwork skeleton"/>
+        <item serial="0x05DE79CB" graphic="0x009A" color="0x0000" comment="a mummy"/>
+        <item serial="0x05DE617F" graphic="0x0094" color="0x0000" comment="a skeletal mage"/>
+    </ignorelist>
+</data>

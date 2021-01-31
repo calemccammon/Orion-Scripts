@@ -186,4 +186,19 @@
     <speech text="Emptying the trashcan!" color="0xFFFF" fullmatch="true"/>
     <speech text="The bleeding wounds have healed, you are no longer bleeding!" color="0xFFFF" fullmatch="true"/>
     <speech text="You feel invigorated by the bard's spellsong." color="0xFFFF" fullmatch="true"/>
+    <speech text="You weave your blade to execute a block." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have delivered a crushing blow!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You weave your blade to execute a Crushing Blow." color="0xFFFF" fullmatch="true"/>
+    <speech text="You no longer try to block the next attack." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your attack penetrates their armor!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You weave your blade to execute a Armor Ignore." color="0xFFFF" fullmatch="true"/>
+    <speech text="You block an attack!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You weave your blade to execute a Bleed Attack." color="0xFFFF" fullmatch="true"/>
+    <speech text="Your target is bleeding!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You weave your blade to execute a Feint." color="0xFFFF" fullmatch="true"/>
+    <speech text="You baffle your target with a feint!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You weave your blade to execute a Paralyzing Blow." color="0xFFFF" fullmatch="true"/>
+    <speech text="You weave your blade to execute a Mortal Strike." color="0xFFFF" fullmatch="true"/>
+    <speech text="You deliver a mortal wound!" color="0xFFFF" fullmatch="true"/>
+    <speech text="*The creature surges with battle experience and is ready to train!*" color="0xFFFF" fullmatch="true"/>
 </data>

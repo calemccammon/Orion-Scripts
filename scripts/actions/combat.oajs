@@ -1,12 +1,12 @@
 function attackNearest() {
+	Orion.UseIgnoreList('summons');
+	Orion.UseIgnoreList('animated_undead');
     Orion.Ignore(self);
     var target = Orion.FindType("-1", "-1", "ground", "near|live", 18, "gray|criminal|orange|red");
     if (target.length != 0) {
     	var name = Orion.FindObject(target[0]).Name();
-    	//TODO make this based on an ignore list
-    	//TODO make this proceed to the next target if we ignore target[0]
     	//We check the player's name to ignore mirror images
-    	if(name != "an energy vortex" && name != "a rising colossus" && name != Player.Name()) {
+    	if(name != Player.Name()) {
 		     Orion.WarMode(true);
 		     Orion.ClientLastTarget(target[0]);
 		     Orion.Attack(target[0]);
@@ -15,7 +15,7 @@ function attackNearest() {
 		     	Orion.InvokeVirtue("Honor");
 		     	Orion.WaitTargetObject(target[0]);
 		     }
-		     Orion.IgnoreReset();
 		}
     }
+    Orion.IgnoreReset();
 }
