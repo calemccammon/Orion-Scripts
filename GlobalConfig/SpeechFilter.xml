@@ -201,4 +201,8 @@
     <speech text="You weave your blade to execute a Mortal Strike." color="0xFFFF" fullmatch="true"/>
     <speech text="You deliver a mortal wound!" color="0xFFFF" fullmatch="true"/>
     <speech text="*The creature surges with battle experience and is ready to train!*" color="0xFFFF" fullmatch="true"/>
+    <speech text="Beware! A statue of your pet has been created!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Target the item you wish to toggle insurance status on &lt;ESC&gt; to cancel" color="0xFFFF" fullmatch="true"/>
+    <speech text="Double click this item each time you wish to throw a shuriken." color="0xFFFF" fullmatch="true"/>
+    <speech text="tasty!" color="0xFFFF" fullmatch="true"/>
 </data>

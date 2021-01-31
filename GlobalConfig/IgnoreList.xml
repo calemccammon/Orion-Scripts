@@ -13,5 +13,8 @@
         <item serial="0x05DE7A6C" graphic="0x0135" color="0x0000" comment="a patchwork skeleton"/>
         <item serial="0x05DE79CB" graphic="0x009A" color="0x0000" comment="a mummy"/>
         <item serial="0x05DE617F" graphic="0x0094" color="0x0000" comment="a skeletal mage"/>
+        <item serial="0x063ED5CD" graphic="0x0068" color="0x0000" comment="a skeletal dragon"/>
+        <item serial="0x06444522" graphic="0x004F" color="0x0000" comment="a lich lord"/>
+        <item serial="0x06455884" graphic="0x0093" color="0x0000" comment="a skeletal knight"/>
     </ignorelist>
 </data>
