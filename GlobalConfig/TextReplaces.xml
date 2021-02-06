@@ -56,4 +56,5 @@
     <replace originaltext="Mounts and flying are not permitted in this area." originalcolor="0xFFFF" replacedtext="*dismounted*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
     <replace originaltext="Your reward has been placed in your backpack." originalcolor="0xFFFF" replacedtext="*** Reward Received ***" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You have insured the item" originalcolor="0xFFFF" replacedtext="*insured*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
+    <replace originaltext="The map is too difficult to attempt to decode." originalcolor="0xFFFF" replacedtext="*impossible*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
 </data>

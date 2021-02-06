@@ -205,4 +205,10 @@
     <speech text="Target the item you wish to toggle insurance status on &lt;ESC&gt; to cancel" color="0xFFFF" fullmatch="true"/>
     <speech text="Double click this item each time you wish to throw a shuriken." color="0xFFFF" fullmatch="true"/>
     <speech text="tasty!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Become adept in Mysticism. Help save Ter Mur!" color="0xFFFF" fullmatch="true"/>
+    <speech text="Select Marked item." color="0xFFFF" fullmatch="true"/>
+    <speech text="You notice the crest of Minax on your fallen foe's equipment and decide it may be of some value..." color="0xFFFF" fullmatch="true"/>
+    <speech text="You recover an artifact bearing the crest of Minax from the rubble." color="0xFFFF" fullmatch="true"/>
+    <speech text="The creature's essence of disease is damaging you!" color="0xFFFF" fullmatch="false"/>
+    <speech text="You feel a surge of magic as the scroll enhances your " color="0xFFFF" fullmatch="false"/>
 </data>
