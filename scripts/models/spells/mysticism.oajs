@@ -1,0 +1,148 @@
+////#include spell.oajs
+
+const MYST = "Mysticism";
+
+const HEALING_STONE = MystSpell(
+	"Healing Stone",
+	"Kal In Mani",
+	0,
+	4,
+	5000
+);
+
+const NETHER_BOLT = MystSpell(
+	"Nether Bolt",
+	"In Corp Ylem",
+	0,
+	4,
+	500
+);
+
+const ENCHANT = MystSpell(
+	"Enchant",
+	"In Ort Ylem",
+	80,
+	6,
+	750
+);
+
+const PURGE_MAGIC = MystSpell(
+	"Purge Magic",
+	"An Ort Sanct",
+	80,
+	6,
+	750
+);
+
+const EAGLE_STRIKE = MystSpell(
+	"Eagle Strike",
+	"Kal Por Xen",
+	200,
+	9,
+	1000
+);
+
+const SLEEP = MystSpell(
+	"Sleep",
+	"In Zu",
+	200,
+	8,
+	1000
+);
+
+const ANIMATED_WEAPON = MystSpell(
+	"Animated Weapon",
+	"In Jux Por Ylem",
+	330,
+	11,
+	1250
+);
+
+const STONE_FORM = MystSpell(
+	"Stone Form",
+	"In Rel Ylem",
+	330,
+	11,
+	1250
+);
+
+const MASS_SLEEP = MystSpell(
+	"Mass Sleep",
+	"Vas Zu",
+	450,
+	14,
+	1500
+);
+
+const SPELL_TRIGGER = MystSpell(
+	"Spell Trigger",
+	"In Vas Ort Ex",
+	450,
+	14,
+	1500
+);
+
+const BOMBARD = MystSpell(
+	"Bombard",
+	"Corp Por Ylem",
+	580,
+	20,
+	1750;
+);
+
+const CLEANSING_WINDS = MystSpell(
+	"Cleansing Winds",
+	"In Vas Mani Hur",
+	580,
+	20,
+	1750
+);
+
+const HAIL_STORM = MystSpell(
+	"Hail Storm",
+	"Kal Des Ylem",
+	700,
+	50,
+	2000
+);
+
+const SPELL_PLAGUE = MystSpell(
+	"Spell Plague",
+	"Vas Rel Jux Ort",
+	700,
+	40,
+	2000
+);
+
+const NETHER_CYCLONE = MystSpell(
+	"Nether Cyclone",
+	"Grav Hur",
+	830,
+	50,
+	2250
+);
+
+const RISING_COLOSSUS = MystSpell(
+	"Rising Colossus",
+	"Kal Vas Xen Corp Ylem",
+	830,
+	50,
+	2250
+);
+
+function MystSpell(
+	name,
+	wordsOfPower,
+	level,
+	cost,
+	delay
+) {
+	return Spell(
+		name,
+		wordsOfPower,
+		MYST,
+		level,
+		cost,
+		delay
+	);
+}

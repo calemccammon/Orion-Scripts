@@ -1,4 +1,3 @@
-const MYST = "Mysticism";
 const SPELLWEAVE = "Spellweaving";
 const CHIV = "Chivalry";
 const NECRO = "Necromancy";
