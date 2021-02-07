@@ -1,0 +1,66 @@
+var energyVortex = '0x00A4';
+var risingColossus = '0x033D';
+var reaper = '0x002F';
+var bladeSpirit = '0x023E';
+
+var summons = [
+	energyVortex,
+	risingColossus,
+	reaper,
+	bladeSpirit
+];
+
+var boneMage = '0x0094';
+var lich = '0x0018';
+var fleshGolem = '0x0130';
+var patchworkSkeleton = '0x0135';
+var mummy = '0x009A';
+var skeletalMage = '0x0094';
+var skeletalDragon = '0x0068';
+var lichLord = '0x004F';
+var skeletalKnight = '0x0093';
+
+var animatedUndead = [
+	boneMage,
+	lich,
+	fleshGolem,
+	patchworkSkeleton,
+	mummy,
+	skeletalMage,
+	skeletalDragon,
+	lichLord,
+	skeletalKnight
+];
+
+function findNearestAttackable(applyFilter) {
+	const types = Orion.FindType(0xFFFF, 0xFFFF, "ground", "live|ignorefriends|mobile", 10, "gray|criminal|orange|red");
+	if (types.length > 0) {
+		const objects = types.map(function(type) {
+			return Orion.FindObject(type);
+		}).filter(function(object) {
+			if (!applyFilter) {
+				return false;
+			} else {
+				var isSummon = containsType(summons, object.Graphic());
+				var isAnimated = containsType(animatedUndead, object.Graphic());
+				return !isSummon && !isAnimated && object.Notoriety != 6;
+			}
+		}).sort(function(a, b) {
+			return Orion.GetDistance(a.Serial()) - Orion.GetDistance(b.Serial());
+		});
+		if (objects.length > 0) {
+			return objects[0];
+		}
+	}
+	return null;
+}
+
+function containsType(a, obj) {
+    var i = a.length;
+    while (i--) {
+       if (a[i] === obj) {
+           return true;
+       }
+    }
+    return false;
+}

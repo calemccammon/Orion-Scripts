@@ -211,4 +211,7 @@
     <speech text="You recover an artifact bearing the crest of Minax from the rubble." color="0xFFFF" fullmatch="true"/>
     <speech text="The creature's essence of disease is damaging you!" color="0xFFFF" fullmatch="false"/>
     <speech text="You feel a surge of magic as the scroll enhances your " color="0xFFFF" fullmatch="false"/>
+    <speech text="IDOC loot items." color="0xFFFF" fullmatch="false"/>
+    <speech text=" points for turning in an item for Clean Up Britannia." color="0xFFFF" fullmatch="false"/>
+    <speech text="What do you want to use this item on?" color="0xFFFF" fullmatch="true"/>
 </data>

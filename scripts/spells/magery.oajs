@@ -1,6 +1,8 @@
+//#include ../models/spells/magery.oajs
+
 function mageryInvisibility() {
 	if(!Player.Paralyzed()) {
-		Orion.Cast("Invisibility", self);
+		Orion.Cast(INVISIBILITY.name, self);
 	}
 }
 

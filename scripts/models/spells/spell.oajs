@@ -1,0 +1,24 @@
+const MYST = "Mysticism";
+const SPELLWEAVE = "Spellweaving";
+const CHIV = "Chivalry";
+const NECRO = "Necromancy";
+const BUSH = "Bushido";
+const NINJ = "Ninjitsu";
+
+function Spell(
+	name,
+	wordsOfPower,
+	skill, 
+	level, 
+	cost, 
+	delay
+) {
+	const spell = {};
+	spell.name = name;
+	spell.wordsOfPower = wordsOfPower;
+	spell.skill = skill;
+	spell.level = level;
+	spell.cost = cost;
+	spell.delay = delay;
+	return spell;
+}

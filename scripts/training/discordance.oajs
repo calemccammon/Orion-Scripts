@@ -30,7 +30,8 @@ function trainDiscordanceAfk() {
 		 Orion.WarMode(true);
 		 Orion.Attack(target[0]);
 		 Orion.Wait(2000);
-		 if (Orion.InJournal('You attempt to disrupt your target, but fail') || Orion.InJournal('too far away.')) {
+		 Orion.Cast('Invisibility', self);
+		 if (Orion.InJournal('Fail') || Orion.InJournal('fail') || Orion.InJournal('too far away.')) {
 		 	Orion.Wait(6000);
 		 } else {
 		 	//Remain invisible for a bit so discordance wears off.
@@ -41,5 +42,5 @@ function trainDiscordanceAfk() {
     	Orion.Wait(30000);
     }
     Orion.IgnoreReset();
-    trainDiscordance();
+    trainDiscordanceAfk();
 }

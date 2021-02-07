@@ -1,6 +1,7 @@
 //#include scripts/actions/barding.oajs
 //#include scripts/actions/combat.oajs
 //#include scripts/actions/player.oajs
+//#include scripts/actions/targeting.oajs
 //#include scripts/spells/bushido.oajs
 //#include scripts/spells/chivalry.oajs
 //#include scripts/spells/magery.oajs
