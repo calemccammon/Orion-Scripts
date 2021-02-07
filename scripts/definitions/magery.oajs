@@ -1,0 +1,382 @@
+//#include _spell.oajs
+
+const MageSpells = {
+	CLUMSY: MagerySpell(
+		"Clumsy",
+		"Uus Jux",
+		1
+	),
+	CREATE_FOOD: MagerySpell(
+		"Create Food",
+		"In Mani Ylem",
+		1
+	),
+	FEEBLEMIND: MagerySpell(
+		"Feeblemind",
+		"Rel Wis",
+		1
+	),
+	HEAL: MagerySpell(
+		"Heal",
+		"In Mani",
+		1
+	),
+	MAGIC_ARROW: MagerySpell(
+		"Magic Arrow",
+		"In Por Ylem",
+		1
+	),
+	NIGHT_SIGHT: MagerySpell(
+		"Night Sight",
+		"In Lor",
+		1
+	),
+	REACTIVE_ARMOR: MagerySpell(
+		"Reactive Armor",
+		"Flam Sanct",
+		1
+	),
+	AGILITY: MagerySpell(
+		"Agility",
+		"Ex Uus",
+		2
+	),
+	CUNNING: MagerySpell(
+		"Cunning",
+		"Uus Wis",
+		2
+	),
+	CURE: MagerySpell(
+		"Cure",
+		"An Nox",
+		2
+	),
+	HARM: MagerySpell(
+		"Harm",
+		"An Mani",
+		2
+	),
+	MAGIC_TRAP: MagerySpell(
+		"Magic Trap",
+		"In Jux",
+		2
+	),
+	MAGIC_UNTRAP: MagerySpell(
+		"Magic Untrap",
+		"An Jux",
+		2
+	),
+	PROTECTION: MagerySpell(
+		"Protection",
+		"Uus Sanct",
+		2
+	),
+	STRENGTH: MagerySpell(
+		"Strength",
+		"Uus Mani",
+		2
+	),
+	BLESS: MagerySpell(
+		"Bless",
+		"Rel Sanct",
+		3
+	),
+	FIREBALL: MagerySpell(
+		"Fireball",
+		"Vas Flam",
+		3
+	),
+	MAGIC_LOCK: MagerySpell(
+		"Magic Lock",
+		"An Por",
+		3
+	),
+	POISON: MagerySpell(
+		"Poison",
+		"In Nox",
+		3
+	),
+	TELEKINESIS: MagerySpell(
+		"Telekinesis",
+		"Ort Por Ylem",
+		3
+	),
+	TELEPORT: MagerySpell(
+		"Teleport",
+		"Rel Por",
+		3
+	),
+	UNLOCK: MagerySpell(
+		"Unlock",
+		"Ex Por",
+		3
+	),
+	WALL_OF_STONE: MagerySpell(
+		"Wall of Stone",
+		"In Sanct Ylem",
+		3
+	),
+	ARCH_CURE: MagerySpell(
+		"Arch Cure",
+		"Vas An Nox",
+		4
+	),
+	ARCH_PROTECTION: MagerySpell(
+		"Arch Protection",
+		"Vas Uus Sanct",
+		4
+	),
+	CURSE: MagerySpell(
+		"Curse",
+		"Des Sanct",
+		4
+	),
+	FIRE_FIELD: MagerySpell(
+		"Fire Field",
+		"In Flam Grav",
+		4
+	),
+	GREATER_HEAL: MagerySpell(
+		"Greater Heal",
+		"In Vas Mani",
+		4
+	),
+	LIGHTNING: MagerySpell(
+		"Lightning",
+		"Por Ort Grav",
+		4
+	),
+	MANA_DRAIN: MagerySpell(
+		"Mana Drain",
+		"Ort Rel",
+		4
+	),
+	RECALL: MagerySpell(
+		"Recall",
+		"Kal Ort Por",
+		4
+	),
+	BLADE_SPIRIT: Spell(
+		"Blade Spirit",
+		"In Jux Hur Ylem",
+		380,
+		14,
+		6000
+	),
+	DISPEL_FIELD: MagerySpell(
+		"Dispel Field",
+		"An Grav",
+		5
+	),
+	INCOGNITO: MagerySpell(
+		"Incognito",
+		"Kal In Ex",
+		5
+	),
+	MAGIC_REFLECTION: MagerySpell(
+		"Magic Reflection",
+		"In Jux Sanct",
+		5
+	),
+	MIND_BLAST: MagerySpell(
+		"Mind Blast",
+		"Por Corp Wis",
+		5
+	),
+	PARALYZE: MagerySpell(
+		"Paralyze",
+		"An Ex Por",
+		5
+	),
+	POISON_FIELD: MagerySpell(
+		"Poison Field",
+		"In Nox Grav",
+		5
+	),
+	SUMMON_CREATURE: Spell(
+		"Summon Creature",
+		"Kal Xen",
+		380,
+		14,
+		6000
+	),
+	DISPEL: MagerySpell(
+		"Dispel",
+		"An Ort",
+		6
+	),
+	ENERGY_BOLT: MagerySpell(
+		"Energy Bolt",
+		"Corp Por",
+		6
+	),
+	EXPLOSION: MagerySpell(
+		"Explosion",
+		"Vas Ort Flam",
+		6
+	),
+	INVISIBILITY: MagerySpell(
+		"Invisibility",
+		"An Lor Xen",
+		6
+	),
+	MARK: MagerySpell(
+		"Mark",
+		"Kal Por Ylem",
+		6
+	),
+	MASS_CURSE: MagerySpell(
+		"Mass Curse",
+		"Vas Des Sanct",
+		6
+	),
+	PARALYZE_FIELD: MagerySpell(
+		"Paralyze Field",
+		"In Ex Grav",
+		6
+	),
+	REVEAL: MagerySpell(
+		"Reveal",
+		"Wis Quas",
+		6
+	),
+	CHAIN_LIGHTNING: MagerySpell(
+		"Chain Lightning",
+		"Vas Ort Grav",
+		7
+	),
+	ENERGY_FIELD: MagerySpell(
+		"Energy Field",
+		"In Sanct Grav",
+		7
+	),
+	FLAMESTRIKE: MagerySpell(
+		"Flamestrike",
+		"Kal Vas Flam",
+		7
+	),
+	GATE_TRAVEL: MagerySpell(
+		"Gate Travel",
+		"Vas Rel Por",
+		7
+	),
+	MANA_VAMPIRE: MagerySpell(
+		"Mana Vampire",
+		"Ort Sanct",
+		7
+	),
+	MASS_DISPEL: MagerySpell(
+		"Mass Dispel",
+		"Vas An Ort",
+		7
+	),
+	METEOR_SWARM: MagerySpell(
+		"Meteor Swarm",
+		"Flam Kal Des Ylem",
+		7
+	),
+	POLYMORPH: MagerySpell(
+		"Polymorph",
+		"Vas Ylem Rel",
+		7
+	),
+	EARTHQUAKE: MagerySpell(
+		"Earthquake",
+		"In Vas Por",
+		8
+	),
+	ENERGY_VORTEX: MagerySpell(
+		"Energy Vortex",
+		"Vas Corp Por",
+		8
+	),
+	RESURRECTION: MagerySpell(
+		"Resurrection",
+		"An Corp",
+		8
+	),
+	SUMMON_AIR_ELEMENTAL: MagerySpell(
+		"Summon Air Elemental",
+		"Kal Vas Xen Hur",
+		8
+	),
+	SUMMON_DAEMON: MagerySpell(
+		"Summon Daemon",
+		"Kal Vas Xen Corp",
+		8
+	),
+	SUMMON_EARTH_ELEMENTAL: MagerySpell(
+		"Summon Earth Elemental",
+		"Kal Vas Xen Ylem",
+		8
+	),
+	SUMMON_FIRE_ELEMENTAL: MagerySpell(
+		"Summon Fire Elemental",
+		"Kal Vas Xen Flam",
+		8
+	),
+	SUMMON_WATER_ELEMENTAL: MagerySpell(
+		"Summon Water Elemental",
+		"Kal Vas Xen An Flam",
+		8
+	)
+}
+
+
+function MagerySpell(
+	name,
+	wordsOfPower,
+	circle
+) {
+	var level = 0;
+	var cost = 4;
+	var delay = 500;
+	
+	switch (circle) {
+		case 2:
+			cost = 6;
+			delay = 750;
+			break;
+		case 3:
+			cost = 9;
+			level = 90;
+			delay = 1000;
+			break;
+		case 4:
+			cost = 11;
+			level = 240;
+			delay = 1250;
+			break;
+		case 5:
+			cost = 14;
+			level = 380;
+			delay = 1500;
+			break;
+		case 6:
+			cost = 20;
+			level = 520;
+			delay = 1750;
+			break;
+		case 7:
+			cost = 40;
+			level = 670;
+			delay = 2000;
+			break;
+		case 8:
+			cost = 50;
+			level = 810;
+			delay = 2250;
+			break;
+		default:
+			break;
+	}
+	
+	return Spell(
+		name,
+		wordsOfPower,
+		Spellbooks.MAGE,
+		level,
+		cost,
+		delay
+	);
+}

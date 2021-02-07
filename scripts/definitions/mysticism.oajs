@@ -1,6 +1,4 @@
-////#include spell.oajs
-
-const MYST = "Mysticism";
+//#include _spell.oajs
 
 const HEALING_STONE = MystSpell(
 	"Healing Stone",
@@ -87,7 +85,7 @@ const BOMBARD = MystSpell(
 	"Corp Por Ylem",
 	580,
 	20,
-	1750;
+	1750
 );
 
 const CLEANSING_WINDS = MystSpell(
@@ -140,7 +138,7 @@ function MystSpell(
 	return Spell(
 		name,
 		wordsOfPower,
-		MYST,
+		Spellbooks.MYST,
 		level,
 		cost,
 		delay

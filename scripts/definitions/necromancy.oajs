@@ -1,0 +1,19 @@
+//#include _spell.oajs
+
+const NECRO = "Necromancy";
+
+function NecroSpell(
+	name,
+	wordsOfPower,
+	level,
+	cost,
+	delay
+) {
+	return Spell(
+		name,
+		wordsOfPower,
+		NECRO,
+		cost,
+		delay
+	);
+}

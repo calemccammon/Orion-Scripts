@@ -1,8 +1,12 @@
-const SPELLWEAVE = "Spellweaving";
-const CHIV = "Chivalry";
-const NECRO = "Necromancy";
-const BUSH = "Bushido";
-const NINJ = "Ninjitsu";
+const Spellbooks = {
+	MAGE: "Magery",
+	SPELLWEAVE: "Spellweaving",
+	NECRO: "Necromancy",
+	BUSH: "Bushido",
+	NINJ: "Ninjitsu",
+	CHIV: "Chivalry",
+	MYST: "Mysticism"
+}
 
 function Spell(
 	name,
