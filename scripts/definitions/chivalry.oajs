@@ -1,76 +1,67 @@
 //#include _spell.oajs
 
-const CHIV = "Chivalry";
-
-const CLOSE_WOUNDS = ChivSpell(
-	"Close Wounds",
-	"Obsu Vulni",
-	0,
-	10
-);
-
-const REMOVE_CURSE = ChivSpell(
-	"Remove Curse",
-	"Extremo Vomica",
-	5,
-	20
-);
-
-const CLEANSE_BY_FIRE = ChivSpell(
-	"Cleanse by Fire",
-	"Expor Flamus",
-	5,
-	10
-);
-
-const CONSECRATE_WEAPON = ChivSpell(
-	"Consecrate Weapon",
-	"Consecrus Arma",
-	15,
-	10
-);
-
-const SACRED_JOURNEY = ChivSpell(
-	"Sacred Journey",
-	"Sanctum Viatas",
-	15,
-	10
-);
-
-const DIVINE_FURY = ChivSpell(
-	"Divine Fury",
-	"Divinum Furis",
-	25,
-	15
-);
-
-const DISPEL_EVIL = ChivSpell(
-	"Dispel Evil",
-	"Dispiro Malas",
-	35,
-	10
-);
-
-const ENEMY_OF_ONE = ChivSpell(
-	"Enemy of One",
-	"Forul Solum",
-	45,
-	20
-);
-
-const HOLY_LIGHT = ChivSpell(
-	"Holy Light",
-	"Augus Luminos",
-	55,
-	10
-);
-
-const NOBLE_SACRIFICE = ChivSpell(
-	"Noble Sacrifice",
-	"Dium Prostra",
-	65,
-	20
-);
+const ChivSpells = {
+	CLOSE_WOUNDS: ChivSpell(
+		"Close Wounds",
+		"Obsu Vulni",
+		0,
+		10
+	),
+	REMOVE_CURSE: ChivSpell(
+		"Remove Curse",
+		"Extremo Vomica",
+		5,
+		20
+	),
+	CLEANSE_BY_FIRE : ChivSpell(
+		"Cleanse by Fire",
+		"Expor Flamus",
+		5,
+		10
+	),
+	CONSECRATE_WEAPON: ChivSpell(
+		"Consecrate Weapon",
+		"Consecrus Arma",
+		15,
+		10
+	),
+	SACRED_JOURNEY: ChivSpell(
+		"Sacred Journey",
+		"Sanctum Viatas",
+		15,
+		10
+	),
+	DIVINE_FURY: ChivSpell(
+		"Divine Fury",
+		"Divinum Furis",
+		25,
+		15
+	),
+	DISPEL_EVIL: ChivSpell(
+		"Dispel Evil",
+		"Dispiro Malas",
+		35,
+		10
+	),
+	ENEMY_OF_ONE: ChivSpell(
+		"Enemy of One",
+		"Forul Solum",
+		45,
+		20
+	),
+	HOLY_LIGHT: ChivSpell(
+		"Holy Light",
+		"Augus Luminos",
+		55,
+		10
+	),
+	NOBLE_SACRIFICE: ChivSpell(
+		"Noble Sacrifice",
+		"Dium Prostra",
+		65,
+		20
+	)
+}
 
 function ChivSpell(
 	name,
@@ -82,7 +73,7 @@ function ChivSpell(
 	return Spell(
 		name,
 		wordsOfPower,
-		CHIV,
+		Spellbooks.CHIV,
 		level,
 		cost,
 		1250
