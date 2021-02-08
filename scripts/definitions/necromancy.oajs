@@ -1,7 +1,126 @@
-//#include _spell.oajs
+//#include _spell.oaj
 
-const NECRO = "Necromancy";
-
+const NecroSpells = {
+	CURSE_WEAPON: NecroSpell(
+		"Curse Weapon",
+		"An Sanct Gra Char",
+		0,
+		7,
+		500
+	),
+	BLOOD_OATH: NecroSpell(
+		"Blood Oath",
+		"In Jux Mani Xen",
+		200,
+		13,
+		1250
+	),
+	CORPSE_SKIN: NecroSpell(
+		"Corpse Skin",
+		"In Aglo Corp Ylem",
+		200,
+		11,
+		1250
+	),
+	EVIL_OMEN: NecroSpell(
+		"Evil Omen",
+		"Pas Tym An Sanct",
+		200,
+		11,
+		500
+	),
+	PAIN_SPIKE: NecroSpell(
+		"Pain Spike",
+		"In Sar",
+		200,
+		5,
+		750
+	),
+	WRAITH_FORM: NecroSpell(
+		"Wraith Form",
+		"Rel Xen Um",
+		200,
+		17,
+		1750
+	),
+	MIND_ROT: NecroSpell(
+		"Mind Rot",
+		"Wis An Ben",
+		300,
+		17,
+		1250
+	),
+	SUMMON_FAMILIAR: NecroSpell(
+		"Summon Familiar",
+		"Kal Xen Bal",
+		300,
+		17,
+		1750
+	),
+	ANIMATE_DEAD: NecroSpell(
+		"Animate Dead",
+		"Uus Corp",
+		400,
+		23,
+		1250
+	),
+	HORRIFIC_BEAST: NecroSpell(
+		"Horrific Beast",
+		"Rel Xen Vas Bal",
+		400,
+		11,
+		1750
+	),
+	POISON_STRIKE: NecroSpell(
+		"Poison Strike",
+		"In Vas Nox",
+		500,
+		17,
+		1500
+	),
+	WITHER: NecroSpell(
+		"Wither",
+		"Kal Vas An Flam",
+		600,
+		23,
+		1000
+	),
+	STRANGLE: NecroSpell(
+		"Strangle",
+		"In Bal Nox",
+		650,
+		29,
+		1750
+	),
+	LICH_FORM: NecroSpell(
+		"Lich Form",
+		"Rel Xen Corp Ort",
+		700,
+		23,
+		1750
+	),
+	EXORCISM: NecroSpell(
+		"Exorcism",
+		"Ort Corp Grav",
+		800,
+		40,
+		1750
+	),
+	VENGEFUL_SPIRIT: NecroSpell(
+		"Vengeful Spirit",
+		"Kal Xen Bal Beh",
+		800,
+		41,
+		1750
+	),
+	VAMPIRIC_EMBRACE: NecroSpell(
+		"Vampiric Embrace",
+		"Rel Xen An Sanct",
+		990,
+		23,
+		1750
+	)
+}
 function NecroSpell(
 	name,
 	wordsOfPower,
@@ -12,7 +131,7 @@ function NecroSpell(
 	return Spell(
 		name,
 		wordsOfPower,
-		NECRO,
+		Spellbooks.NECRO,
 		cost,
 		delay
 	);
