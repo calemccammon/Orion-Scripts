@@ -10,6 +10,7 @@
 //#include scripts/casting/ninjitsu.oajs
 //#include scripts/casting/spellweaving.oajs
 //#include scripts/definitions/_spell.oajs
+//#include scripts/definitions/bushido.oajs
 //#include scripts/definitions/chivalry.oajs
 //#include scripts/definitions/magery.oajs
 //#include scripts/definitions/mysticism.oajs

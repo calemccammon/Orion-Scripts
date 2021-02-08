@@ -1,0 +1,56 @@
+//#include _spell.oajs
+
+const BushSpells = {
+	HONORABLE_EXECUTION: BushSpell(
+		"Honorable Execution",
+		250,
+		0,
+		0
+	),
+	COUNTER_ATTACK: BushSpell(
+		"Counter Attack",
+		400,
+		5,
+		0
+	),
+	CONFIDENCE: BushSpell(
+		"Confidence",
+		250,
+		10,
+		1000
+	),
+	EVASION: BushSpell(
+		"Evasion",
+		600,
+		10,
+		1000
+	),
+	MOMENTUM_STRIKE: BushSpell(
+		"Momentum Strike",
+		700,
+		10,
+		0
+	),
+	LIGHTNING_STRIKE: BushSpell(
+		"Lightning Strike",
+		500,
+		10,
+		0
+	)
+}
+
+function BushSpell(
+	name,
+	level,
+	cost,
+	delay
+) {
+	return Spell(
+		name,
+		null,
+		Spellbooks.BUSH,
+		level,
+		cost,
+		delay
+	);
+}
