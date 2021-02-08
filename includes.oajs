@@ -14,6 +14,7 @@
 //#include scripts/definitions/magery.oajs
 //#include scripts/definitions/mysticism.oajs
 //#include scripts/definitions/necromancy.oajs
+//#include scripts/definitions/ninjitsu.oajs
 //#include scripts/training/alchemy.oajs
 //#include scripts/training/anatomy.oajs
 //#include scripts/training/animal_taming.oajs

@@ -1,0 +1,67 @@
+//#include _spell.oajs
+
+const NinjSpells = {
+	ANIMAL_FORM: NinjSpell(
+		"Animal Form",
+		0,
+		10,
+		1000
+	),
+	MIRROR_IMAGE: NinjSpell(
+		"Mirror Image",
+		200,
+		10,
+		1000
+	),
+	FOCUS_ATTACK: NinjSpell(
+		"Focus Attack",
+		300,
+		10,
+		0
+	),
+	BACKSTAB: NinjSpell(
+		"Backstab",
+		400,
+		30,
+		0
+	),
+	SHADOW_JUMP: NinjSpell(
+		"Shadow Jump",
+		500,
+		15,
+		1000
+	),
+	SURPRISE_ATTACK: NinjSpell(
+		"Surprise Attack",
+		600,
+		20,
+		0
+	),
+	KI_ATTACK: NinjSpell(
+		"Ki Attack",
+		800,
+		25,
+		0
+	),
+	DEATH_STRIKE: NinjSpell(
+		"Death Strike",
+		850,
+		30,
+		0
+	)
+}
+function NinjSpell(
+	name,
+	level,
+	cost,
+	delay
+) {
+	return Spell(
+		name,
+		null,
+		Spellbooks.NINJ,
+		level,
+		cost,
+		delay
+	);
+}

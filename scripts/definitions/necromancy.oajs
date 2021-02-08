@@ -1,4 +1,4 @@
-//#include _spell.oaj
+//#include _spell.oajs
 
 const NecroSpells = {
 	CURSE_WEAPON: NecroSpell(
