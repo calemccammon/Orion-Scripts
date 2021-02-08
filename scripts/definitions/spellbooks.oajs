@@ -1,0 +1,9 @@
+const Spellbooks = {
+	MAGE: "Magery",
+	SPELLWEAVE: "Spellweaving",
+	NECRO: "Necromancy",
+	BUSH: "Bushido",
+	NINJ: "Ninjitsu",
+	CHIV: "Chivalry",
+	MYST: "Mysticism"
+}

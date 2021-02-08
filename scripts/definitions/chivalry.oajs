@@ -1,4 +1,5 @@
-//#include _spell.oajs
+//#include ../models/Spell.oajs
+//#include spellbooks.oajs
 
 const ChivSpells = {
 	CLOSE_WOUNDS: ChivSpell(
