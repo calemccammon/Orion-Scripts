@@ -61,4 +61,5 @@
     <replace originaltext="You have a new trash barrel.  Three minutes after you put something in the barrel, the trash will be emptied." originalcolor="0xFFFF" replacedtext="*placed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="false" systemtooverhead="true"/>
     <replace originaltext="You destroy the item." originalcolor="0xFFFF" replacedtext="*destroyed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
     <replace originaltext="You attempt to disrupt your target, but fail." originalcolor="0xFFFF" replacedtext="[Music] Discord - Failed" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="* You are in extreme pain, and require immediate aid! *" originalcolor="0xFFFF" replacedtext="*poisoned*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
 </data>

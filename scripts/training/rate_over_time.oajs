@@ -15,6 +15,10 @@ function trainRateOverTimeHiding() {
 	trainRateOverTime("Hiding");
 }
 
+function trainRateOverTimeCartography() {
+	trainRateOverTime("Cartography");
+}
+
 function trainRateOverTime(skillToTrain) {
 	var skillLevel = Orion.SkillValue(skillToTrain, "base");
 	var cap = Orion.SkillValue(skillToTrain, "cap");
@@ -44,6 +48,9 @@ function trainRateOverTime(skillToTrain) {
 				break;
 			case "Hiding":
 				iterateDelay = practiceHiding(skillLevel);
+				break;
+			case "Cartography":
+				iterateDelay = practiceCartography(skillLevel);
 				break;
 			default:
 				break;
@@ -101,6 +108,14 @@ function practiceMysticism(skill) {
 		Orion.Cast('Nether Cyclone', self);
 		return 7000;
 	}
+}
+
+function practiceCartography(skill) {
+	Orion.UseType('0x0FC0', '0xFFFF');
+	if (Orion.WaitForGump(1000)) {
+		Orion.GetGump('last').Select(Orion.CreateGumpHook(4)); //world map
+	}
+	return 1000;
 }
 
 function practiceHiding(stub) {

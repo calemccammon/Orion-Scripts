@@ -214,4 +214,13 @@
     <speech text="IDOC loot items." color="0xFFFF" fullmatch="false"/>
     <speech text=" points for turning in an item for Clean Up Britannia." color="0xFFFF" fullmatch="false"/>
     <speech text="What do you want to use this item on?" color="0xFFFF" fullmatch="true"/>
+    <speech text="An arcane focus appears in your backpack." color="0xFFFF" fullmatch="true"/>
+    <speech text="The creature goes into a rage, inflicting heavy damage!" color="0xFFFF" fullmatch="true"/>
+    <speech text="The creature's rage subsides." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have been poisoned!" color="0xFFFF" fullmatch="true"/>
+    <speech text="A corrosive gas seeps out of your enemy's skin!" color="0xFFFF" fullmatch="true"/>
+    <speech text="You are no longer under the protection of the slimy ointment." color="0xFFFF" fullmatch="true"/>
+    <speech text="The acid river burns your skin." color="0xFFFF" fullmatch="true"/>
+    <speech text="Greetings.  Have a look around." color="0xFFFF" fullmatch="true"/>
+    <speech text="Bring me 10 of the lost treasures of Tokuno and I will reward you with a valuable item." color="0xFFFF" fullmatch="true"/>
 </data>

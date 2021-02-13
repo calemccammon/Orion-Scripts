@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data version="0" size="2">
+<data version="0" size="3">
     <findlist name="tmaps">
         <item graphic="0x0F26" color="0x0000" comment="Diamond" count="0"/>
         <item graphic="0x0EED" color="0x0000" comment="Gold Coin" count="0"/>
@@ -11,5 +11,11 @@
         <item graphic="0x0F13" color="0x0000" comment="Ruby" count="0"/>
         <item graphic="0x0F25" color="0x0000" comment="Amber" count="0"/>
         <item graphic="0x0F10" color="0x0000" comment="Emerald" count="0"/>
+    </findlist>
+    <findlist name="cartography">
+        <item graphic="0x14EB" color="0x0000" comment="Local Map" count="1"/>
+        <item graphic="0x14EB" color="0x0000" comment="City Map" count="1"/>
+        <item graphic="0x14EB" color="0x0000" comment="Sea Chart" count="0"/>
+        <item graphic="0x14EB" color="0x0000" comment="World Map" count="0"/>
     </findlist>
 </data>
