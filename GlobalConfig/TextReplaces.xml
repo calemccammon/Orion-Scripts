@@ -62,4 +62,6 @@
     <replace originaltext="You destroy the item." originalcolor="0xFFFF" replacedtext="*destroyed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
     <replace originaltext="You attempt to disrupt your target, but fail." originalcolor="0xFFFF" replacedtext="[Music] Discord - Failed" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="* You are in extreme pain, and require immediate aid! *" originalcolor="0xFFFF" replacedtext="*poisoned*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="You fail to apply a sufficient dose of poison." originalcolor="0xFFFF" replacedtext="*failed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
+    <replace originaltext="You apply the poison." originalcolor="0xFFFF" replacedtext="*success*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
 </data>

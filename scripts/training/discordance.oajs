@@ -1,3 +1,4 @@
+//Low-level training : Run around discording everything
 function trainDiscordance() {
 	Orion.Ignore(self);
     var target = Orion.FindType("-1", "-1", "ground", "near|live", 18, "blue|gray|criminal|orange|red");
@@ -43,4 +44,39 @@ function trainDiscordanceAfk() {
     }
     Orion.IgnoreReset();
     trainDiscordanceAfk();
+}
+
+//Semi-unattended macro for 80+ training on blue targets.
+//Park near Sakkhra warrior in Eodon and let it go.
+//You'll just need to check for your instrument breaking.
+//Instead of using invis, we step away to clear the target's discord.
+function trainDiscordanceAfkBlueTarget() {
+	Orion.CancelTarget();
+	Orion.ClearJournal();
+    var target = Orion.FindType("-1", "-1", "ground", "near|live", 18, "blue");
+    if (target.length != 0) {
+		 Orion.UseSkill('Discordance');
+		 Orion.WaitTargetObject(target[0]);
+		 Orion.Wait(500);
+		 if (Orion.InJournal('Fail') || Orion.InJournal('fail') || Orion.InJournal('too far away.')) {
+		 	Orion.Wait(6000);
+		 } else {
+		 	Orion.Turn('west');
+		 	Orion.Wait(300);
+		 	const object = Orion.FindObject(target[0]);
+		 	while (object.Distance() < 30) {
+		 		Orion.Step('west');
+		 		Orion.Wait(250);
+		 	}
+		 	Orion.Wait(5000);
+		 	Orion.Turn('east');
+		 	Orion.Wait(300);
+		 	while (object.Distance() > 10) {
+		 		Orion.Step('east');
+		 		Orion.Wait(250);
+		 	}
+		 }
+	}
+	Orion.Wait(500);
+    trainDiscordanceAfkBlueTarget();
 }

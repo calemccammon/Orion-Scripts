@@ -15,7 +15,7 @@
     <findlist name="cartography">
         <item graphic="0x14EB" color="0x0000" comment="Local Map" count="1"/>
         <item graphic="0x14EB" color="0x0000" comment="City Map" count="1"/>
-        <item graphic="0x14EB" color="0x0000" comment="Sea Chart" count="0"/>
-        <item graphic="0x14EB" color="0x0000" comment="World Map" count="0"/>
+        <item graphic="0x14EB" color="0x0000" comment="Sea Chart" count="1"/>
+        <item graphic="0x14EB" color="0x0000" comment="World Map" count="1"/>
     </findlist>
 </data>
