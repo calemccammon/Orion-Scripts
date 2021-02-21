@@ -64,19 +64,29 @@ function trainDiscordanceAfkBlueTarget() {
 		 	Orion.Turn('west');
 		 	Orion.Wait(300);
 		 	const object = Orion.FindObject(target[0]);
-		 	while (object.Distance() < 30) {
+		 	for (var i = 0; i <= 35; i++) {
 		 		Orion.Step('west');
-		 		Orion.Wait(250);
+		 		Orion.Wait(300);
 		 	}
-		 	Orion.Wait(5000);
 		 	Orion.Turn('east');
 		 	Orion.Wait(300);
-		 	while (object.Distance() > 10) {
+		 	for (var i = 0; i <= 35; i++) {
 		 		Orion.Step('east');
-		 		Orion.Wait(250);
+		 		Orion.Wait(300);
 		 	}
 		 }
 	}
 	Orion.Wait(500);
     trainDiscordanceAfkBlueTarget();
+}
+
+function trainDiscordanceMastery() {
+	var discord = Orion.SkillValue("Discordance", "base");
+	while (discord < Orion.SkillValue("Discordance", "cap")) {
+		Orion.Cast("Tribulation");
+		Orion.WaitForTarget(3000);
+		Orion.TargetObject(self);
+		Orion.Wait(5000);
+		discord = Orion.SkillValue("Discordance", "base");
+	}
 }
