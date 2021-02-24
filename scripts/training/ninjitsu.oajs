@@ -28,7 +28,7 @@ function useMirrorImage(stub) {
 
 function attackNearestMirrorImage(stub) {
     Orion.Ignore(self);
-    var target = Orion.FindType("-1", "-1", "ground", "near|live", 18, "blue|gray");
+    var target = Orion.FindType("-1", "-1", "ground", "near|live", 5, "");
     if (target.length != 0) {
     	var name = Orion.FindObject(target[0]).Name();
     	if (name == Player.Name()) {
