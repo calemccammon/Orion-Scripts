@@ -2,7 +2,7 @@
 function trainStealth() {
 	var skill = Orion.SkillValue('Stealth', 'base');
 	var hideText = 'hidden';
-	var stealthFail = 'You fail in your attempt to move unnoticed';
+	var stealthFail = 'fail';
 	if (Orion.OptionAlwaysRun()) {
 		Orion.OptionAlwaysRun(false);
 	}

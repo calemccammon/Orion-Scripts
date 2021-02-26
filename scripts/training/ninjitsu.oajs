@@ -4,7 +4,7 @@ function trainNinjitsu() {
 		if (skill < 560) {
 			useMirrorImage();
 		} else if (skill < 875) {
-			if (!Player.Hidden()) {
+			while (!Player.Hidden()) {
 				Orion.UseSkill('Hiding');
 				Orion.Wait(2000);
 			}
@@ -52,6 +52,12 @@ function useShadowJump(stub) {
 			Orion.Wait(10000);
 		}
 		Orion.Step('North'); //Initiate stealth
+		Orion.Wait(400);
+		if (!Player.Hidden()) {
+			Orion.Step('South');
+			Orion.Wait(400);
+			break;
+		}
 		Orion.Cast('Shadowjump');
 		Orion.WaitForTarget(2000);
 		Orion.TargetTileRelative(null, 0,1,0);
