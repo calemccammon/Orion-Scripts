@@ -1,7 +1,7 @@
 function trainPeaceMaking() {
 	var skill = Orion.SkillValue('Peacemaking','base');
 	var manaCost = 30;
-	var instrument = '0x0E9D';
+	var instrument = '0x0E9D'; //lute
 	
 	while(skill < Orion.SkillValue('Peacemaking','cap')) {
 		Orion.ClearJournal();
@@ -16,6 +16,11 @@ function trainPeaceMaking() {
 				Orion.Wait(250);
 			}
 			Orion.Wait(3000);
+		} else {
+			Orion.UseSkill('Peacemaking');
+			Orion.WaitForTarget(1000);
+			Orion.TargetObject(self);
+			Orion.Wait(12000);
 		}
 		skill = Orion.SkillValue('Peacemaking','base');
 	}

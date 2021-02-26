@@ -225,4 +225,5 @@
     <speech text="Bring me 10 of the lost treasures of Tokuno and I will reward you with a valuable item." color="0xFFFF" fullmatch="true"/>
     <speech text="Select the poison you wish to use." color="0xFFFF" fullmatch="true"/>
     <speech text="To what do you wish to apply the poison?" color="0xFFFF" fullmatch="true"/>
+    <speech text="You prepare to perform a Shadowjump." color="0xFFFF" fullmatch="true"/>
 </data>
