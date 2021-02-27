@@ -240,4 +240,5 @@
     <speech text="I promise to take good care of you." color="0xFFFF" fullmatch="true"/>
     <speech text="Nice..." color="0xFFFF" fullmatch="true"/>
     <speech text="For less I shall teach thee less." color="0xFFFF" fullmatch="true"/>
+    <speech text="The tainted life force energy damages you as your body tries to absorb it." color="0xFFFF" fullmatch="true"/>
 </data>

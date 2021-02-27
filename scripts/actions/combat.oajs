@@ -11,7 +11,8 @@ function attackNearest() {
 	     Orion.Print("[Target] " + target.Name());
 	     if(Orion.SkillValue("Bushido") >= 50) {
 	     	Orion.InvokeVirtue("Honor");
-	     	Orion.WaitTargetObject(target);
+	     	Orion.WaitForTarget(1000);
+	     	Orion.TargetObject(target.Serial());
 	     }
     }
     Orion.IgnoreReset();
