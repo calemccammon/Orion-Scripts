@@ -1,0 +1,8 @@
+//#include targeting.oajs
+
+function tameNearest() {
+	const target = findNearestAttackable(true);
+	if (target != null) {
+		Orion.UseSkill('Animal Taming', target.Serial());
+	}
+}

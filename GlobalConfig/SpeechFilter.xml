@@ -226,4 +226,18 @@
     <speech text="Select the poison you wish to use." color="0xFFFF" fullmatch="true"/>
     <speech text="To what do you wish to apply the poison?" color="0xFFFF" fullmatch="true"/>
     <speech text="You prepare to perform a Shadowjump." color="0xFFFF" fullmatch="true"/>
+    <speech text="Will you be my friend?" color="0xFFFF" fullmatch="true"/>
+    <speech text="It would be mutually beneficial if we were to join forces." color="0xFFFF" fullmatch="true"/>
+    <speech text="I can protect you from the dangers of this world." color="0xFFFF" fullmatch="true"/>
+    <speech text="Tame which animal?" color="0xFFFF" fullmatch="true"/>
+    <speech text="Don't be afraid." color="0xFFFF" fullmatch="true"/>
+    <speech text="Come here..." color="0xFFFF" fullmatch="true"/>
+    <speech text="Good..." color="0xFFFF" fullmatch="true"/>
+    <speech text="Here..." color="0xFFFF" fullmatch="true"/>
+    <speech text="I've been searching for a companion like you." color="0xFFFF" fullmatch="true"/>
+    <speech text="Will you travel with me, noble creature?" color="0xFFFF" fullmatch="true"/>
+    <speech text="I've always wanted a pet like you." color="0xFFFF" fullmatch="true"/>
+    <speech text="I promise to take good care of you." color="0xFFFF" fullmatch="true"/>
+    <speech text="Nice..." color="0xFFFF" fullmatch="true"/>
+    <speech text="For less I shall teach thee less." color="0xFFFF" fullmatch="true"/>
 </data>

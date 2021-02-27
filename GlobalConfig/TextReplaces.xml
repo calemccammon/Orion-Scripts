@@ -70,4 +70,8 @@
     <replace originaltext="You play hypnotic music, but there is nothing in range for you to calm." originalcolor="0xFFFF" replacedtext="[Music] Calm - Success" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You are busy doing something else and cannot hide." originalcolor="0xFFFF" replacedtext="[Status] Busy" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You fail in your attempt to move unnoticed." originalcolor="0xFFFF" replacedtext="*failed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
+    <replace originaltext="You fail to hide." originalcolor="0xFFFF" replacedtext="*failed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="*You start to tame the creature.*" originalcolor="0xFFFF" replacedtext="*taming*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="You fail to tame the creature." originalcolor="0xFFFF" replacedtext="*failed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
+    <replace originaltext="It seems to accept you as master." originalcolor="0xFFFF" replacedtext="*success*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
 </data>

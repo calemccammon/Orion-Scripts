@@ -5,11 +5,7 @@ function trainPeaceMaking() {
 	
 	while(skill < Orion.SkillValue('Peacemaking','cap')) {
 		Orion.ClearJournal();
-		if (skill >= 900) {
-			if (Player.Mana() < 30) {
-				Orion.UseSkill('Meditation');
-				Orion.Wait(10000);
-			}
+		if (skill >= 900 && Player.Mana() > 30) {
 			Orion.Cast('Resilience');
 			if (Orion.WaitForTarget(1000)) {
 				Orion.TargetType(instrument, '0xFFFF');
