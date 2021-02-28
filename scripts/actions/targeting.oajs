@@ -11,7 +11,7 @@ function findNearestAttackable(applyFilter) {
 			} else {
 				var isSummon = containsType(SUMMONS, object.Graphic());
 				var isAnimated = containsType(ANIMATED_UNDEAD, object.Graphic());
-				return !isSummon && !isAnimated && object.Notoriety != 6;
+				return !isSummon && !isAnimated && object.Notoriety() != 6;
 			}
 		}).sort(function(a, b) {
 			return Orion.GetDistance(a.Serial()) - Orion.GetDistance(b.Serial());

@@ -1,4 +1,6 @@
-function trainAnimalTaming() {
+//#include ../actions/targeting.oajs
+
+function trainAnimalTamingMastery() {
 	var skill = Orion.SkillValue('Animal Taming', 'base');
 	var lore = Orion.SkillValue('Animal Lore', 'base');
 	var pet = '0x063AD000';
@@ -25,4 +27,26 @@ function trainAnimalTaming() {
 			Orion.Wait(10000);
 		}
 	}
+}
+
+function trainAnimalTamingNearest() {
+	const target = findNearestAttackable(true);
+	const followers = Player.Followers();
+	const target = findNearestAttackable(true);
+	if (target != null) {
+		Orion.Follow(target.Serial());
+		do {
+			Orion.UseSkill('Animal Taming', target.Serial());
+			Orion.Wait(2000);
+		} while (followers == Player.Followers());
+		release(target.Serial());
+	}
+}
+
+function release(serial) {
+	Orion.RequestContextMenu(serial);
+	Orion.WaitContextMenuID(serial, 9);
+	Orion.WaitForGump(750);
+	Orion.GetGump('last').Select(Orion.CreateGumpHook(2));
+	Orion.Wait(250);
 }

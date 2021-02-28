@@ -241,4 +241,6 @@
     <speech text="Nice..." color="0xFFFF" fullmatch="true"/>
     <speech text="For less I shall teach thee less." color="0xFFFF" fullmatch="true"/>
     <speech text="The tainted life force energy damages you as your body tries to absorb it." color="0xFFFF" fullmatch="true"/>
+    <speech text="If you accompany me, we will protect one another." color="0xFFFF" fullmatch="true"/>
+    <speech text="I won't hurt you." color="0xFFFF" fullmatch="true"/>
 </data>
