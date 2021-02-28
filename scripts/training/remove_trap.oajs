@@ -1,23 +1,35 @@
 //Brute force solving of the circuit trap for low level training of Remove Trap.
 //This will only work up to 75.
 
-var kit = '0xA393';
+const kit = '0xA393';
 
-var solution_1 = [2, 2, 3, 3];
-var solution_2 = [2, 3, 2, 3];
-var solution_3 = [2, 3, 3, 2];
-var solution_4 = [2, 3, 4, 3, 2, 2];
-var solution_5 = [2, 2, 3, 4, 3, 2];
-var solution_6 = [2, 2, 3, 4, 4, 3, 2, 2];
-var solution_7 = [3, 3, 2, 2];
-var solution_8 = [3, 2, 3, 2];
-var solution_9 = [3, 2, 2, 3];
-var solution_10 = [3, 2, 1, 2, 3, 3];
-var solution_11 = [3, 3, 2, 1, 2, 3];
-var solution_12 = [3, 3, 2, 1, 1, 2, 3, 3];
+const solution_1 = [2, 2, 3, 3];
+const solution_2 = [2, 3, 2, 3];
+const solution_3 = [2, 3, 3, 2];
+const solution_4 = [2, 3, 4, 3, 2, 2];
+const solution_5 = [2, 2, 3, 4, 3, 2];
+const solution_6 = [2, 2, 3, 4, 4, 3, 2, 2];
+const solution_7 = [3, 3, 2, 2];
+const solution_8 = [3, 2, 3, 2];
+const solution_9 = [3, 2, 2, 3];
+const solution_10 = [3, 2, 1, 2, 3, 3];
+const solution_11 = [3, 3, 2, 1, 2, 3];
+const solution_12 = [3, 3, 2, 1, 1, 2, 3, 3];
 
-var solutions = [solution_1, solution_2, solution_3, solution_4, solution_5, solution_6,
-solution_7, solution_8, solution_9, solution_10, solution_11, solution_12];
+const solutions = [
+	solution_1, 
+	solution_2, 
+	solution_3, 
+	solution_4, 
+	solution_5, 
+	solution_6,
+	solution_7, 
+	solution_8, 
+	solution_9, 
+	solution_10, 
+	solution_11, 
+	solution_12
+];
 
 function trainRemoveTrap() {
 	while (Orion.SkillValue("Remove Trap") < 750) {

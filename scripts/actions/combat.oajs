@@ -1,4 +1,6 @@
 //#include targeting.oajs
+//#include ../definitions/magery.oajs
+//#include ../definitions/chivalry.oajs
 
 function attackNearest() {
     Orion.Ignore(self);
@@ -16,4 +18,23 @@ function attackNearest() {
 	     }
     }
     Orion.IgnoreReset();
+}
+
+function healSelf() {
+	const chiv = Orion.SkillValue("Chivalry", "base");
+	const mage = Orion.SkillValue("Magery", "base");
+	const poisoned = Player.Poisoned();
+	const doHeal = Player.MaxHits() != Player.Hits();
+	
+	if (poisoned && chiv > mage) {
+		Orion.Cast(ChivSpells.CLEANSE_BY_FIRE.name, self);
+	} else if (chiv > mage && doHeal) {
+		Orion.Cast(ChivSpells.CLOSE_WOUNDS.name, self);
+	} else if (Player.Poisoned() && mage > 0) {
+		Orion.Cast(MageSpells.ARCH_CURE, self);
+	} else if (mage > 0 && doHeal && Player.MaxHits() - Player.Hits() <= 15) {
+		Orion.Cast(MageSpells.HEAL.name, self);
+	} else if (mage > 0 && doHeal) {
+		Orion.Cast(MageSpells.GREATER_HEAL.name, self);
+	} 
 }
