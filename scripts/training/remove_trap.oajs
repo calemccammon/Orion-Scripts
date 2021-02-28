@@ -68,9 +68,9 @@ function openKit(stub) {
 }
 
 function isWrong(stub) {
-	return Orion.InJournal("fail to disarm");
+	return Orion.InJournal("fail");
 }
 
 function isRight(stub) {
-	return Orion.InJournal("successfully disarm");
+	return Orion.InJournal("successful");
 }
