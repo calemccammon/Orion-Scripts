@@ -243,4 +243,7 @@
     <speech text="The tainted life force energy damages you as your body tries to absorb it." color="0xFFFF" fullmatch="true"/>
     <speech text="If you accompany me, we will protect one another." color="0xFFFF" fullmatch="true"/>
     <speech text="I won't hurt you." color="0xFFFF" fullmatch="true"/>
+    <speech text="You have achieved the highest path in Valor and can no longer gain any further." color="0xFFFF" fullmatch="true"/>
+    <speech text="The creature spills a pool of acidic slime!" color="0xFFFF" fullmatch="true"/>
+    <speech text="spits a poisonous substance at you!" color="0xFFFF" fullmatch="false"/>
 </data>

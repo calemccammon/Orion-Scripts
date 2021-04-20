@@ -76,4 +76,6 @@
     <replace originaltext="It seems to accept you as master." originalcolor="0xFFFF" replacedtext="*success*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
     <replace originaltext="You fail to disarm the trap and reset it." originalcolor="0xFFFF" replacedtext="*failed*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
     <replace originaltext="You successfully disarm the trap!" originalcolor="0xFFFF" replacedtext="*success*" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="true"/>
+    <replace originaltext="You have killed a quest creature." originalcolor="0xFFFF" replacedtext="*** Quest Progress ***" replacedcolor="0x0042" type="0" mode="0" fullmatch="false" systemtooverhead="false"/>
+    <replace originaltext="You have killed all the required quest creatures of this type." originalcolor="0xFFFF" replacedtext="*** Quest Achieved ***" replacedcolor="0x0042" type="0" mode="0" fullmatch="true" systemtooverhead="false"/>
 </data>
