@@ -4,18 +4,19 @@ function trainPoisoning() {
 	var poison = '0x0F0A';
 	var dagger = '0x0F51';
 	while (skill < Orion.SkillValue('Poisoning', 'cap')) {
-		if (skill < 900) {
-		Orion.UseSkill('Poisoning');
-		Orion.WaitForTarget(1000);
-		Orion.UseType(keg, '0xFFFF');
-		Orion.WaitForTarget(1000);
-		Orion.TargetType(poison, '0xFFFF');
-		Orion.WaitForTarget(1000);
-		Orion.TargetType(dagger, '0xFFFF');
-		Orion.Wait(11000);
-	} else {
-		Orion.Cast('Tolerance', self);
-		Orion.Wait(2000);
+	    if (skill < 900) {
+    		Orion.UseSkill('Poisoning');
+    		Orion.WaitForTarget(1000);
+    		Orion.UseType(keg, '0xFFFF');
+    		Orion.WaitForTarget(1000);
+    		Orion.TargetType(poison, '0xFFFF');
+    		Orion.WaitForTarget(1000);
+    		Orion.TargetType(dagger, '0xFFFF');
+    		Orion.Wait(11000);
+    	} else {
+		    Orion.Cast('Tolerance', self);
+		    Orion.Wait(2000);
+	    }
+	    skill =  Orion.SkillValue('Poisoning','base');
 	}
-	skill =  Orion.SkillValue('Poisoning','base');
 }
