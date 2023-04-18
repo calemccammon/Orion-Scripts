@@ -1,0 +1,9 @@
+function trainThrowing() {
+	var skill = Orion.SkillValue('Throwing','base');
+	
+	while(skill >= 900 && skill < Orion.SkillValue('Throwing','cap')) {
+		Orion.Cast('Called Shot', self);
+		Orion.Wait(65000);		
+		skill = Orion.SkillValue('Throwing','base');
+	}
+}
