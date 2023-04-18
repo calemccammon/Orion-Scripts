@@ -18,6 +18,10 @@ function keepBandaging(stub) {
 			bandageTimer = (8.0 - offset) * 1000.0;
 		}
 		
+		if (Orion.ShardName() == "UOAlive") {
+			bandageTimer = bandageTimer / 2;
+		}
+	
 		if(!Player.Dead() && !Player.Hidden() &&  doBandage) {
 			Orion.BandageSelf();
 			Orion.Wait(bandageTimer);
